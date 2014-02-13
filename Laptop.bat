@@ -59,6 +59,6 @@ powercfg.exe -setdcvalueindex 381b4222-f694-41f0-9685-ff5bb260df2e 7516b95f-f776
 	echo Dimmed display brightness
 powercfg.exe -setacvalueindex 381b4222-f694-41f0-9685-ff5bb260df2e 7516b95f-f776-4464-8c53-06167f40cc99 f1fbfde2-a960-4165-9f88-50667911ce96 30
 powercfg.exe -setdcvalueindex 381b4222-f694-41f0-9685-ff5bb260df2e 7516b95f-f776-4464-8c53-06167f40cc99 f1fbfde2-a960-4165-9f88-50667911ce96 01
-regedit.exe /s "C:\Users\%username%\Desktop\C1\Files\Ketarin\Scripts\WifiPowerMan.reg"
+regedit.exe /s "C:\Users\%username%\Desktop\C1SetupUtility\Files\Scripts\WifiPowerMan.reg"
 pause
 exit
