@@ -1,0 +1,1012 @@
+## Configured using SAM by root on Sat Apr 15 08:48:49 2006
+## Configured using SAM by root on Wed Sep  5 11:28:46 2007
+# @(#)hosts $Revision: 1.9.212.1 $ $Date: 95/10/12 19:28:22 $
+#
+# The form for each entry is:
+# <internet address>  <official hostname> <aliases>
+#
+# For example:
+# 192.1.2.34  hpfcrm  loghost
+#
+# See the hosts(4) manual page for more information.
+# Note: The entries cannot be preceded by a space.
+# The format described in this file is the correct format.
+#       The original Berkeley manual page contains an error in
+# the format description.
+#
+
+127.0.0.1 localhost
+
+#Oakbrook External
+192.65.158.212  oakb-xtm5     #firewall external network address.
+
+#Oakbrook Internal
+172.17.1.1     oakb-xtm5-int  #firewall internal network address
+172.17.1.3     oakb-e3800     #HP Switch vlan1 address
+172.17.1.121   oakb-t420      #laptop for local access and configuration
+
+#Oakbrook DMZ
+172.17.2.1     oakb-xtm5-dmz  #firewall DMZ netwrok address
+172.17.2.3     oakb-e3800-dmz #HP Switch vlan2 address.
+
+#optional-ups
+172.16.18.50  apc1  #user:apc pass:apc  rico 6u ups (next to rico)
+172.16.18.51  apc2  #user:apc pass:apc  rico small ups
+172.16.18.52  apc3  #user:apc pass:apc  old apc in front by phone
+172.16.18.53  apc4  #user:apc pass:apc  new closest to rico
+172.16.18.54  apc5  #user:apc pass:apc  new closest to phone
+172.16.18.55  apc6  #user:apc pass:  old apc in back (white)
+172.16.18.56  apc7  #user:apc pass:  new apc in back (black)
+
+#INTERNET-NEW IP
+#172.16.18.177  #AT&T Router
+#172.16.18.178  wgfire
+#172.16.18.179  #AT&T ATVS Router for China Connection
+172.16.18.180   www  #compositesone.com
+172.16.18.181   #guardian
+172.16.18.182   web-fs web_fs gwmail groupwise
+172.16.18.183   b2b1 b2b1.glsc1.com
+172.16.18.184   www  #virtual host for b2bcomposites.ca
+172.16.18.185   www  #virtual host for b2bcomposites.com
+172.16.18.186   www  #virtual host for b2btpe.com
+172.16.18.187   b2b b2b.glsc1.com b2bc1 b2bc1.glsc1.com
+172.16.18.188   b2btpe b2btpe.glsc1.com
+172.16.18.189   b2btpe-china.com www.b2btpe-china.com
+#172.16.18.190  cisco-switch
+172.16.18.191   www.b2bcomposites-china.com b2bcomposites-china.com
+
+#ARLINGTON HEIGHTS-NEW
+#servers/storage 1-29
+172.16.17.1   arli arli85
+172.16.17.2   rico mxp mxp.synergy55.com mxp.glscorp.com edocs
+172.16.17.3   ARLI_FS arli-fs GLS_TREE gls_tree
+172.16.17.4   arlint
+172.16.17.5   sensaphone ims4000 IMS4000
+172.16.17.7   BKUP_FS bkup-fs
+172.16.17.8   spacely www web www.c1.com
+172.16.17.9   uniblab uniblab.synergy55.com uniblab.glscorp.com wms.glscorp.com
+wmsch.glscorp.com
+172.16.17.10  arli-snap
+172.16.17.11  arliterm ARLITERM #new Windows 2000 Terminal Server
+172.16.17.12  vm voice-mail
+172.16.17.13  doors
+172.16.17.14  doors-cont
+172.16.17.15  oldterm
+172.16.17.16  arli-newsnap
+172.16.17.17  neutrino neutrino.synergy55.com #node
+172.16.17.18  domino domino.synergy55.com #master
+172.16.17.19  boundip #boundip
+172.16.17.20  zeppo zeppo.synergy55.com #node
+172.16.17.21  hugo hugo.synergy55.com
+172.16.17.22  hugo-oa hugo-oa.synergy55.com
+
+#groupwise 30-39
+#172.16.17.30  notifylink nles
+#172.16.17.31  GWA-FS gwa_fs gwia #GroupWise Agent NetWare Server
+#172.16.17.32  C1CORP c1corp ngwnameserver2  #GW C1 Corp Post Office Server
+#172.16.17.33  CORPHQ GLS_TREE corphq ngwnameserver  #GW HQ Post Office Server
+#172.16.17.34  ASYNC-FS async-fs
+#172.16.17.35  mplus  #M+Guardian email scanner appliance
+
+#switches 40-49
+172.16.17.40  Arli-2040  #Single Port 2040 SDU at Arli
+172.16.17.41  Arli656    #Single Port T1 DSU/CSU at Arli
+172.16.17.42  arlibackbone
+172.16.17.43  arlinorth
+172.16.17.44  arlisouth
+172.16.17.45  arlieast
+172.16.17.46  arliwest
+
+#other/appliance/wireless 50-59
+172.16.17.51  arli-wap1    # IS area
+172.16.17.52  arli-wap2    # Board room
+172.16.17.53  arli-wap3    # Training room
+172.16.17.54  arli-wap4    # Accounting Area
+172.16.17.55  ws2000-corp  #Symbol ws2000 wireless switch
+
+#printers 60-89
+172.16.17.60  arli-copy1    #Canon iR3245
+172.16.17.61  arli-copy2    #Canon iR3245
+#172.16.17.62  arli-acct     #HP LaserJet 8100
+172.16.17.63  arli-cfs      #HP LaserJet 4si
+172.16.17.64  arli-exec     #HP Color LaserJet 4500 (SDehmlow)
+172.16.17.65  arli-is       #HP LaserJet 9050
+172.16.17.66  arli-isscan   #Canon 1025n
+172.16.17.67  arli-cmd      #HP LaserJet 2200 (VHoffman)
+172.16.17.68  arli-west     #Hp LaserJet 9050
+172.16.17.69  arli-ljcolor  #HP Color LaserJet 4500 (Acct)
+172.16.17.70  arli-hrhp4    #HP LaserJet Pro 400MFP(HR)
+172.16.17.71  arli-mktg     #HP Color LaserJet 9500 (Mktg)
+#172.16.17.72 hr-ceridian   #No Longer Exists
+172.16.17.73  arli-exec2    #HP LaserJet 4050 (SDehmlow)
+172.16.17.74  arli-recp     #HP LaserJet 2300 (Reception)
+172.16.17.75  arli-recpfax  #Sharp FO-DC600 (Reception)
+#172.16.17.76 arli-copyold  #No Longer Exists (Old Ricoh)
+#172.16.17.77     available
+172.16.17.78  arli-acct     #HP LaserJet 8100 new address
+172.16.17.79  arli-zebra    #zebra 140xiiiplus
+
+#172.16.17.80-220  #Reserved for DHCP
+
+#firewall 240-254
+172.16.17.242  jbsmith-t60
+172.16.17.248  wglogserv #new
+172.16.17.249  wg530
+172.16.17.250  avts #mchenry
+172.16.17.251  arli-check1  #HP LaserJet 8100 (AP Checks)
+172.16.17.252  arli-ap1     #HP LaserJet 9050 (AP Backup)
+172.16.17.253  avts         #AVTS LAN Router AH
+172.16.17.254  wg5500
+
+
+#mchenry
+172.16.20.1  ted  #ted router
+172.16.20.2  neo name-svr
+#172.16.20.2  monstro  #Monstro disaster recovery server/development
+#172.16.20.3  TED_FS ted-fs  #ted file server
+172.16.20.3  harpo harpo.synergy55.com #new dev web server located in neo rack-
+white one below gwa-fs
+172.16.20.4  TEDB2D_FS tedb2d-fs #ted Backup-To-Disk NetWare Server
+172.16.20.5  neosnap  #neo snapserver
+172.16.20.6  ted-areca  #ted Backup-To-Disk Server's RAID Controller
+172.16.20.7  teddoors  #Doors Computer at TED
+172.16.20.8  avts-ted  #AVTS LAN Router
+172.16.20.9  ted-backbone  #HP ProCurve Switch 3400cl-24G
+172.16.20.10  tedfirebox  #WatchGuard Firebox X1000 at McHenry
+172.16.20.11  ted-hp5r  #HP 5 printer in Reception
+172.16.20.12  ted-exec  #HP5Si in Computer/Phone Room in McHenry
+172.16.20.13  ted-hp5 tedhp5  #HP5Si TED Main Printer
+172.16.20.14  ted-rd  #HP 2300 in R&D
+172.16.20.15  ted-qc  #HP 2300 in QC
+172.16.20.16  ted-hp3200  #HP LaserJet 3200 in Chris Klatka's Office
+172.16.20.17  ted-hp4050  #HP 4050 in Aaron's Office
+172.16.20.18  ted-minolta  #Konica-Minolta BizHub 250 in R&D
+172.16.20.19  ted-hp8150  #HP LaserJet 8150dn
+172.16.20.20  tedclj8550dn  #HP Color LaserJet 8550dn
+172.16.20.21  ted-hp4300  #HP LaserJet 4300 dtn in R&D Area
+172.16.20.22  ted-cave  #HP LaserJet 4050TN in TED Cave Area
+172.16.20.23  ted-hp3500  #HP Color LaserJet 3500n in R&D
+172.16.20.24  ted-purch2  #HP LaserJet P2015x at Jill Petska's Desk
+172.16.20.25  ted-whse  #HP JetDirect 300X West Warehouse LJ2300
+172.16.20.26  ted-ricohbw  #ted ricoh b&w printer
+172.16.20.27  tedzeb1  #Zebra Label Printer in Production Office
+172.16.20.28  tedzeb2  #Zebra Label Printer in Production Office
+172.16.20.29  cogswell  #DevB2B Web Server
+#172.16.20.29  devb2b devc1 devtpe devncl tpet devcan devweb  #DevB2B Web Server
+172.16.20.31  ted-acct  #HP LaserJet P2015x in Shelley Miller's office
+172.16.20.32    ted-cp2025      #HP Color LaserJet CP2025dn in Walter Ripple's O
+ffice
+172.16.20.95  OLDTED_FS oldted-fs oldted_fs  #Old NetWare Server at TED
+172.16.20.96    daveo # for dave when on-site
+172.16.20.97    ted-fgdock4  #cary HP P2035N
+172.16.20.98    ted-mdp1505n  #HP P1505n on MDouglass desk
+#172.16.20.101-104  #Reserved for RLN Server IP Address Pool
+172.16.20.111  TEDProcurve80  #TED HP Procurve 10-100 Switch with 80 Ports
+172.16.20.112  ted-term TED-TERM  #Windows 2000 Terminal Server
+172.16.20.126  ted-ricohcolor  #ted ricoh color printer
+172.16.20.147  1tecerdian  #ceridian time clock
+#172.16.20.148  devwms wms2 devwmsch wmsch2  #wms servers names
+#172.16.20.148  wms.glscorp.com devwms  #virtual host for devcan
+172.16.20.149  devtpe devtpen devtpen.glscorp.com #virtual host for devtpe
+#172.16.20.150  devc1  #virtual host for devc1
+172.16.20.150  devc1 devc1n devb2b  #DevB2B Web Server virtual host devc1
+172.16.20.151  ted-ship  #HP LaserJet 4350 at McHenry Shipping Dock
+172.16.20.152  ted-purch  #MFC4750e Fax/Printer CFoote
+172.16.20.153  ted-cs  #HP LaserJet 4350dtn in Customer Service
+172.16.20.166  dsherwood  #Diane Sherwood's Desktop Computer
+172.16.20.170  devch www.devb2btpe-china.com  #virtual host for china
+172.16.20.171  TEDProcurve2650  #TED HP Procurve 48-port 10-100 Switch
+172.16.20.178  qcwkstn1  #TED QC Lab Workstation One
+172.16.20.179  qcwkstn2  #TED QC Lab Workstation Two
+172.16.20.180  rheo1  #TED QC Lab Rheometer Workstation One
+172.16.20.181  rheo2  #TED QC Lab Rheometer Workstation Two
+172.16.20.182  rheo3  #TED QC Lab Rheometer Workstation Three
+172.16.20.183  rheo4  #TED QC Lab Rheometer Workstation Four
+172.16.20.184  rheo5  #TED QC Lab Rheometer Workstation Five
+172.16.20.185  qctensile  #TED QC Lab Tensile Tester Workstation
+172.16.20.186  rdtensile  #TED R&D Tensile Tester Workstation
+172.16.20.187  rd-datacolor  #TED R&D Lab Data Color Tester Workstation
+172.16.20.188  rd-tainst  #TED R&D Lab TA Instruments Workstation
+172.16.20.189  rd-digital  #TED R&D Lab Digital Computer Workstation
+172.16.20.190  rd-dell  #TED R&D Lab Dell Workstation
+172.16.20.192  rd-mocon  #TED R&D Lab Mocon Equipment Workstation
+172.16.20.193  rd-waters  #TED R&D Lab Waters Instruments Workstation
+172.16.20.194  rd-rheo1  #TED R&D Rheometer Workstation 1
+172.16.20.195  rd-rheo2  #TED R&D Rheometer Workstation 2
+172.16.20.196  line6  #Workstation Running Line 6
+172.16.20.198  line8  #Workstation Running Line 8
+172.16.20.199  ted-fax  #Sharp FO-DC500 Fax Machine in Mail Room
+172.16.20.200  rfmaster #ComPacer Rite Systems RF Control Unit
+172.16.20.211  scale  #Production Scale
+172.16.20.218  zebra-rd  #Zebra printer at BMurphy's desk in R&D
+172.16.20.230  ted-zebra1  #Zebra Label Printer
+172.16.20.231  ted-p1505  #Production office Printer
+172.16.20.246  tedwap1  #McHenry Linksys WAP55AG Wireless Access Point
+172.16.20.247  tedwap2  #McHenry Linksys WAP55AG Wireless Access Point
+172.16.20.248  tedwap3  #McHenry Linksys WAP55AG Wireless Access Point
+172.16.20.253  Co082006 spc  #Windows 2003 Server for SPC Project in McHenry
+#172.16.21.1-172.16.21.199  #Reserved for DHCP
+172.16.21.201  glswrhssw1  #Backbone Switch in 921 Warehouse
+172.16.21.202  glswrhssw2  #Warehouse Ceiling Switch
+172.16.21.203  glswrhsap1  #SE Corner WAP CH 1
+172.16.21.204  glswrhsap2  #SW Corner WAP CH 6
+172.16.21.205  glswrhsap3  #Middle WAP CH 11
+172.16.21.206  glswrhsap4  #NE Corner WAP CH 6
+172.16.21.207  glswrhsap5  #NW Corner WAP CH 1
+172.16.21.208  glswrhsap6  #Office WAP CH 11
+172.16.21.209  glswrhsbr1  #Warehouse Roof Bridge Antenna CH 9
+172.16.21.210  glswrhsbr2  #833 Office Roof Bridge Antenna CH 9
+172.16.21.220  ted-p4014    #ted check printer
+#MONSTRO DISASTER RECOVERY SUBNET
+172.16.117.2  mxp-monstro  #MONSTRO Disaster Recovery
+
+#suzhou
+172.16.24.1   suzh-firebox suzh  #Suzhou, China WatchGuard Firebox X15
+172.16.24.2   suzh-fs suzh_fs    #Suzhou NetWare 6.5 Server
+172.16.20.130  suzh-hp4352        #Suzhou HP LaserJet 4350-2
+172.16.20.131  suzh-hp4350        #Suzhou HP LaserJet 4350
+172.16.24.112 suzh-term          #Suzhou Windows 2003 Terminal Server
+#172.16.24.11  suzh-hp4352        #Suzhou HP LaserJet 4350-2
+#172.16.24.14  suzh-hp4350        #Suzhou HP LaserJet 4350
+
+#argo
+172.16.1.1   argo             #Argo router
+172.16.1.2   argo-fs argo_fs  #Argo NetWare server
+172.16.1.3   argo-netgate     #Argo Netgate
+172.16.1.4   argo-pcanywhere  #Argo PCAnywhere
+172.16.1.9                    #Argo Security Camera System
+#172.16.1.11 argo-hp5         #Argo HP LaserJet 5N
+#172.16.1.12 argo-brother     #Argo Brother Network Fax/Printer
+#172.16.1.12 argo-hp3200      #Argo HP LaserJet 3200se
+#172.16.1.13 argo-hp2200      #No longer have this printer
+172.16.1.14  argo-hp4300      #Argo HP LaserJet 4300dtn
+#172.16.1.15  argo-copy1       #Argo Ricoh 2027
+172.16.1.16  argo-office      #Argo Xerox 7435
+172.16.1.17  argo-office2     #Argo Xerox 7835
+172.16.1.18                   #Argo Epson Dot Martix Printer
+172.16.1.21  argo-ex1         #Argo HP JetDirect EX Plus 3
+#172.16.1.22 argo-ex2         #Argo HP JetDirect EX Plus 3
+172.16.1.23  argo-garage      #Argo Ricoh c3000
+172.16.1.24  argo-forms       #Argo Lexmark 2590
+#172.16.1.31-89               #Reserved for DHCP
+172.16.1.101 argo-wap1        #argo cisco 1242 wap 1 (truck maintenance area)
+172.16.1.102 argo-wap2        #Argo cisco 1131ag wap 2 (office)
+172.16.1.110 argo-snap
+
+#woodstock
+172.16.3.1   woodstock wood wood-netgate  #Woodstock netgate
+#172.16.3.1   woodstock wood  #Woodstock router
+172.16.3.2   wood-fs wood_fs  #Woodstock NetWare Server
+172.16.3.3   wood-switch      #Cisco PoE Switch
+172.16.3.5   wood-vm          #Woodstock Voice Mail Server
+#172.16.3.10  wood-netgate     #Woodstock netgate - att changed ip address on us
+ in error 10/25/11 - ksm
+172.16.3.11  wood-hp5         #Woodstock HP LaserJet 5Si
+172.16.3.12  wood-hp4000      #Woodstock HP LaserJet 4000TN
+172.16.3.13  wood-hp2200      #Woodstock HP LaserJet 2200DN
+172.16.3.14  wood-canon       #Woodstock Canon Copier/Printer
+172.16.3.15  wood-zebra       #Woodstock Zebra Printer
+172.16.3.21  wood-ap1         # cisco 1242 WAP #1
+172.16.3.22  wood-ap2         # cisco 1242 WAP #2 (missing)
+172.16.3.23  wood-ap3         # cisco 1242 WAP #3
+172.16.3.24  wood-ap4         # cisco 1242 WAP #4
+# 172.16.3.31-89              #Reserved for DHCP
+#192.168.133.1                #Mobile Broadband Internet Router
+
+#Ashtabula
+172.16.5.1   ashtabula asht   #Ashtabula router
+172.16.5.2   asht-fs asht_fs  #Ashtabula server
+172.16.5.10  asht-edge        #Watchguard Edge X10e
+172.16.5.11  asht-hp8100      #Ashtabula HP LaserJet 8100
+172.16.5.12  asht-hp4100      #Ashtabula HP LaserJet 4100
+#172.16.5.13 asht-hp2200      #Sent to Monessen
+172.16.5.14  asht-zebra       #Ashtabula Zebra label printer
+172.16.5.21  asht-ex1         #Ashtabula EX-Box 1
+#172.16.5.22 asht-ex2         #Ashtabula EX-Box 2
+#172.16.5.30-89               #Reserved For DHCP
+172.16.5.101 asht-wap1        #cisco wap #1
+172.16.5.102 asht-wap2        #cisco wap #2
+172.16.5.103 asht-wap3        #cisco wap #3
+
+#Goshen
+172.16.6.1   goshen gosh      #gosh router
+172.16.6.2   gosh-fs gosh_fs
+172.16.6.4   gosh2140         #Goshen T1 Add/Drop SDU
+172.16.6.6   goshProcurve     #Goshen HP Procurve 10-100 Switch with 40 ports
+172.16.6.7   gosh-wancontroller #cisco 2106 wan controller (use https)
+172.16.6.9   gosh-hp1320      #HP LaserJet 1320n in Michelle's and Pam's office
+172.16.6.10  gosh-edge        #Goshen Edge Firebox
+172.16.6.11  gosh-hp5         #HP LaserJet 5Si Gosh-Main
+172.16.6.12  gosh-hp5n        #HP LaserJet 5N Gosh-Parts2
+172.16.6.13  gosh-hp4201      #HP LaserJet 4200 Gosh-Purch
+172.16.6.14  gosh-hp4000      #HP LaserJet 4000 Gosh-CSR
+172.16.6.15  gosh-fax         #Canon MultiPass C3500 on JetDirect
+#172.16.6.16  gosh-hp4bl       #Bruce Lau's Hp4 printer
+172.16.6.17  gosh-hp5parts    #HP5Si  Gosh-Parts1
+#172.16.6.18  gosh-shippick    #HP4050  Gosh-Shippick
+#172.16.6.19  gosh-admin       #HP4050  Gosh-Admin
+172.16.6.20  gosh-hp4100      #HP4100  Gosh-LaserPack2
+172.16.6.21  gosh-ex1         #HP JetDirect EX+3 for Shipping
+#172.16.6.22 gosh-ex2         #HP JetDirect EX+3 in the "front"/UPS REMOVED
+172.16.6.23  gosh-ex3         #HP JetDirect EX+3 in parts
+172.16.6.24  gosh-ex4         #HP JetDirect EX+3 in the "middle"/WHS
+172.16.6.25  gosh-ex5         #HP JetDirect EX+3 for Lab Labels
+172.16.6.26  gosh-ex6 goshzebra  #HP JetDirect EX+3 for Zebra Printer
+172.16.6.27  gosh-copy        #copier/printer
+172.16.6.28  gosh-hp4200      #HP4200 Gosh-Shipping
+172.16.6.29  gosh-hp2230      #HP2230 Inkjet for Pam
+#172.16.6.30-90               #Reserved for DHCP
+172.16.6.91                   #susane in goshen to block aim.
+172.16.6.92  gosh-r4310       #Goshen Ricoh 4310N (shippick)
+172.16.6.93  gosh-r43102 gosh-admin      #Goshen Ricoh 4310N (goshadmin)
+172.16.6.97  gosh-pbx         #Goshen PBX
+172.16.6.98  gosh-vm          #Goshen VM System
+172.16.6.99  gosh-time        #timeclock
+172.16.6.101 gosh-zebra       #Goshen Zebra 140xiIIIPlus
+172.16.6.102 gosh-brivo       #Goshen Door Access
+172.16.6.110 gosh-wap-office  #Goshen Access Point Gosh-WAP-Office
+172.16.6.111 gosh-wap-whs1    #Goshen Access Point Gosh-WAP-WHS1
+172.16.6.112 gosh-wap-whs2    #Goshen Access Point Gosh-WAP-WHS2
+172.16.6.113 gosh-wap-whs3    #Goshen Access Point Gosh-WAP-WHS3
+172.16.6.114 gosh-wap-whs4    #Goshen Access Point Gosh-WAP-WHS4
+
+#Dayton
+172.16.7.1   dayton dayt      #Dayton Router
+172.16.7.2   dayt-fs dayt_fs  #Dayton NetWare File Server
+172.16.7.5   dayt-vm          #Dayton Voice Mail Server
+172.16.7.10  dayt-edge        #WatchGuard Edge X10e
+172.16.7.11  dayt-hp5         #HP LaserJet 5Si
+172.16.7.12  dayt-hp4         #HP LaserJet 4 Plus
+172.16.7.13  dayt-hp2200      #HP LaserJet 2200
+172.16.7.14  dayt-zebra       #Zebra 140 printer
+172.16.7.15  dayt-m4345       #HP LaserJet M4345 MFP
+172.16.7.21  dayt-ex1         #HP JetDirect EX+3 port1-oki port2-hp2200
+172.16.7.22  dayt-ex2         #HP JetDirect EX+3 port1-dj895c
+#172.16.7.30-89               #Reserved for DHCP
+172.16.7.101 dayt-wap1        #cisco 1242 wap 1
+172.16.7.102 dayt-wap2        #cisco 1242 wap 2
+
+#Lawrenceville
+172.16.121.1   lawrenceville lawr suwa  #Lawrenceville Router
+172.16.121.2   lawr-fs suwa-fs lawr_fs suwa_fs #Lawr NetWare File Server
+172.16.121.9   lawr-vm
+172.16.121.10  lawr-netgate       #Lawrenceville Netgate
+172.16.121.11  lawr-hp5 suwa-hp5  #HP LaserJet 5Si
+172.16.121.12  lawr-hp4 suwa-hp4  #HP LaserJet 4 Plus
+172.16.121.13  lawr-hp4100 suwa-hp4100  #HP LaserJet 4100
+172.16.121.14  lawr-hp4102 suwa-hp4102  #HP LaserJet 4100N CMcConnell
+172.16.121.15  lawr-p3005
+172.16.121.16  lawr-hp2420
+172.16.121.17  lawr-hp2300
+172.16.121.18  lawr-hp2605   #HP Color LaserJet 2605dn
+172.16.121.19  lawr-zebra    #zebra zm400
+#172.16.121.21 lawr-ex1   #HP JetDirect EX+3
+#172.16.121.22 lawr-ex2   #HP JetDirect EX+3
+#172.16.121.30-89          #Reserved for DHCP
+172.16.121.100 lawr-time  #timeclock
+172.16.121.101 lawr-wap1 #cisco 1242 wap 1
+
+#Valdosta
+172.16.14.1   vald valdosta vald-soho
+172.16.14.2   vald-fs vald_fs
+172.16.14.11  vald-hp8150 vald-hp5
+172.16.14.12  vald-hp4250
+#172.16.14.13 vald-hp4100  #In conference room not connected to lan
+172.16.14.14  vald-zebra
+172.16.14.100 vald-time
+172.16.14.101 vald-wap1  #cisco 1242 wap 1
+172.16.14.102 vald-wap2  #cisco 1242 wap 2
+172.16.14.103 vald-wap3  #cisco 1242 wap 3
+
+#Lakeland
+172.16.8.1   lakeland lake    #Lakeland Router
+172.16.8.2   lake-fs lake_fs  #Lakeland File Server
+172.16.8.3   lake-surv        #Lakelane Surveillance Camera
+172.16.8.4   lake2140         #Lakeland T1 Add/Drop SDU
+172.16.8.5   lake-switch      #Lakeland Switch
+172.16.8.7   kitcut-fs kitcut_fs  #Lakeland Kit File Server
+172.16.8.10  lake-edge
+172.16.8.11  lake-hp4 lake-hp4100  #HP LaserJet 4250 for Packing Slips
+172.16.8.12  lake-hp5         #Lakeland HP LaserJet 5Si
+172.16.8.13  lake-hp4000      #HP LaserJet 4200 by John
+172.16.8.14  lake-hp4200      #Lakeland HP LaserJet 4200
+172.16.8.15  lake-2150        #Samsung ML-2150 Mike & Dianna
+172.16.8.16  lake-hp1320      #HP LaserJet 1320
+172.16.8.17  lake-hp9050      #HP LaserJet 9050
+172.16.8.18  lake-hp2300      #HP LaserJet 2300
+172.16.8.19  lake-hp8100      #HP LaserJet 8100
+172.16.8.20  lake-mlucas      #Static IP on Mlucas for ADT software
+172.16.8.21  lake-hp2301      #HP LaserJet 2300n
+172.16.8.22  lake-hp2420      #Lakeland HP2420
+172.16.8.23  lake-hp4001      #Lakeland HP4000
+172.16.8.24  lake-zebra       #Lakeland zebra zm400
+172.16.8.25  lake-keith       #HP LaserJet 2300n
+172.16.8.29  lake-hp7580      #HP OfficeJet Pro L7580
+#172.16.8.30-89               #Reserved for DHCP
+172.16.8.99  lake-time        #timeclock
+172.16.8.101 lake-wap1        #cisco 1242 wap 1
+172.16.8.102 lake-wap1        #cisco 1242 wap 2
+172.16.8.103 lake-wap1        #cisco 1242 wap 3
+172.16.8.104 lake-wap1        #cisco 1242 wap 4
+
+#Ubique - Kitcut
+172.16.9.1   kitcut-edge    #Watchguard Edge X10e
+172.16.9.11  kitcut-hp4050  #HP LaserJet 4050n
+
+#Medley
+172.16.10.1   medley medl      #Medley Router
+172.16.10.2   medl-fs medl_fs  #MEDL_FS
+172.16.10.6   medl-wap         #Medley WAP54G
+172.16.10.10  medl-soho        #Medley SOHO 6tc
+172.16.10.11  medl-hp4         #Medley HP LaserJet 4 Plus
+#172.16.10.12  medl-hp5         #Medley HP LaserJet 5Si
+172.16.10.13  medl-hp4p        #Medley HP LaserJet 4350 for packs
+172.16.10.14  medl-hp4005      #Medley HP Color LaserJet 4005
+172.16.10.15  medl-copier      #Medley copier
+172.16.10.16  medl-zebra       #Medly zebra zm400 from LD
+172.16.10.21  medl-ex1         #Medley EX Box 1
+172.16.10.22  medl-ex2         #Medley EX Box 2
+172.16.10.100 medl-time        #timeclock
+172.16.10.101 medl-wap1        #Medley cicso 1242 wap 1
+172.16.10.102 medl-wap2        #Medley cicso 1242 wap 2
+
+#Mobile
+172.16.12.1   mobi mobi-soho mobile  #Mobile Router
+# net mask is 255.255.255.0 (non standard on firebox)
+#172.16.12.6  mobi-soho    #Mobile SOHO 6tc
+172.16.12.11  mobi-hp4100  #Mobile HP LaserJet 4100dtn
+172.16.12.12  mobi-hp4350  #Mobile HP LaserJet 4350dtn
+172.16.12.13  mobi-zebra   #zebra zm400
+172.16.12.31  jpinkard-2k  #Jerry's workstation in Mobile
+172.16.12.32  mobile-pc1   #UPS Shipping workstation in Mobile
+172.16.12.33  sevans-2k    #Scott Evans/UPS Workstation
+#172.16.12.51-90           #Reserved for DHCP (SOHO 6tc as the DHCP Server)
+172.16.12.100 mobi-time    #mobile timeclock
+172.16.12.101 mobi-wap1    #cisco 1242 wap 1
+172.16.12.102 mobi-wap1    #cisco 1242 wap 2
+
+#Nashville
+172.16.125.1   nashville nash
+172.16.125.2   nash-fs nash_fs
+172.16.125.6   nash-wap
+172.16.125.9   nash-vm  #Voice Mail Server
+172.16.125.10  nash-netgate
+172.16.125.11  nash-hp8100
+172.16.125.12  nash-hp5
+172.16.125.13  nash-hp4005  #HP Color LaserJet 4005DN
+172.16.125.14  nash-zebra   #Zebra zm400 printer
+172.16.125.21  nash-ex1    #old zebra
+172.16.125.22  nash-ex2
+172.16.125.100 nash-time
+172.16.125.101 nash-wap1    #cisco 1242 wap 1
+172.16.125.102 nash-wap2    #cisco 1242 wap 2
+
+#Santa fe springs new
+172.16.82.1   SantaFeSprings sant
+172.16.82.2   sfs-fs sfs_fs
+172.16.82.4   sant-switch  #Santa Fe Springs HP Procurve Switch
+172.16.82.5   sant-wap     #Santa Fe Springs Wireless Access Point
+172.16.82.7   sant-edge    #Santa Fe Springs WatchGuard Firebox x55e
+172.16.82.9   sant2140     #Santa Fe Springs T1 Add/Drop SDU
+172.16.82.10  sant-hp5
+172.16.82.11  sant-hp5si
+172.16.82.12  sant-hp8100
+172.16.82.13  sant-hp4000
+172.16.82.14  sant-intel   #Epson printer on Intel PrintServer !!!
+172.16.82.15  sant-hp4050  #SFS HP LaserJet 4050
+172.16.82.16  sant-hp8150 sant-hp4555  #SFS HP m4555 unix queue sant8150
+172.16.82.17  sant-color   #SFS HP LaserJet 4600 Color
+172.16.82.18  sant-ex1     #SFS HP JetDirect 500X-1 for invoices
+172.16.82.19  sant-hp4     #SFS HP LaserJet 5200
+172.16.82.20  sant-xe8500  #SFS Xerox 8500 Printer/Scanner/Facsimile
+172.16.82.21  sant-zebra   #SFS Zebra printer
+172.16.82.30  sant-zebra2  #sfs zebra 2 - small labels
+172.16.82.97  purchasing   #Purchasing PC set static IP for logging
+172.16.82.98  scanner-xp   #WSM for logging pc in SFS
+172.16.82.99  sant-pick    #hpjetdirect 170 for santpick
+172.16.82.100 sant-time    #sant timeclock
+172.16.82.101 sant-phones  #sant phones computer
+172.16.82.111 sant-wap1    #sant cisco 1242 wap1
+172.16.82.112 sant-wap2    #sant cisco 1242 wap2
+172.16.82.113 sant-wap3    #sant cisco 1242 wap3
+
+#Bristol
+172.16.62.1   bristol bris     #Bristol Router
+172.16.62.2   bris-fs bris_fs  #Bristol Intel Clone NetWare Server
+172.16.62.4   bris2140         #Bristol T1 Add/Drop DSU-CSU
+172.16.62.6   bris-wapswitch   #Bristol wireless switch  (id admin pw Cisco)
+172.16.62.10  bris-soho
+172.16.62.11  bris-hp8100
+172.16.62.12  bris-hp4000
+172.16.62.13  bris-hp4050
+172.16.62.14  bris-hp2200
+172.16.62.15  bris-canon
+172.16.62.16  bris-hp2420
+172.16.62.17  bris-hp9050     #Bristol HP LaserJet 9050 to replace 8100
+172.16.62.21  bris-ex1
+172.16.62.22  bris-ex2
+172.16.62.23  bris-ex3
+172.16.62.24  bris-zebra
+#172.16.62.31-90               #Reserved for DHCP
+172.16.62.97  bris-pbx
+172.16.62.98  bris-vm
+172.16.62.100 bris-time        #bristol timeclock
+172.16.62.101 bris-wap1        #Bristol wap #1
+172.16.62.102 bris-wap2        #Bristol wap #2
+172.16.62.103 bris-wap3        #Bristol wap #3
+172.16.62.104 bris-wap4        #Bristol wap #4
+172.16.62.105 bris-wap5        #Bristol wap #5
+
+#Maine
+172.16.162.1   rockland main  #Rockland Soho
+172.16.162.11  main-hp2200    #Rockland HP LaserJet 2200N (Spare)
+172.16.162.12  main-pack      #Rockland HP LaserJet 4200N (Packs)
+172.16.162.13  main-hp4250    #Rockland HP LaserJet 4250N (Picks)
+172.16.162.21  main-ex1       #Rockland JetDirect EX Plus 3
+172.16.162.31  main-1         #Rockland First Workstation
+172.16.162.32  main-2         #Rockland Second Workstation
+172.16.162.33  main-3         #Rockland Third Workstation
+172.16.162.100 main-time      #rockland timeclock
+172.16.162.101 main-wap1      #Rockland WAP #1
+172.16.162.102 main-wap2      #Rockland WAP #2
+
+#Millville
+172.16.25.100 millville mill   #Millville Router
+172.16.25.2   mill-fs mill_fs  #Millville NetWare 6.5 Server
+172.16.25.12  mill-hp2200      #Millville HP 2200
+172.16.25.13  mill-dj720       #Millville HP DeskJet 722c
+172.16.25.15  mill-300x2       #Millville HP 300X Print Server for UPS Printer
+#172.16.25.21 mill-work2       #Millville Second Workstation
+#172.16.25.22 mill-work3       #Millville Third Workstation
+#172.16.25.23 mill-work4       #Customer Service Workstation
+172.16.25.99  mill-time        #Millville Timeclock
+172.16.25.101 mill-wap1        #Millville WAP cisco 1242 #1
+172.16.25.102 mill-wap2        #Millville WAP cisco 1242 #2
+172.16.25.230 mill-hp4050      #Millville HP LaserJet 4050TN
+172.16.25.245 mill-300x        #Millville HP 300X Print Server
+
+#Madera
+#172.16.88.1   madera made      #Madera Router
+#172.16.88.2   made-fs made_fs  #Madera NetWare Server
+#172.16.88.3   made-wap         #802.11g&b
+#172.16.88.10  made-edge        #Madera WatchGuard FB X10e
+#172.16.88.11  made-hp4050      #Madera HP LaserJet 4050TN
+#172.16.88.12  made-hp4100      #Madera HP LaserJet 4100TN
+
+#West Sacramento
+172.16.84.1   sacramento  sacr  #West Sacramento Router
+172.16.84.2   sacr-fs sacr_fs   #West Sacramento NetWare File Server
+172.16.84.10  sacr-netgate      #West Sacramento NetGate router
+172.16.84.11  sacr-hp8000       #West Sacramento HP LaserJet 8100DN
+172.16.84.12  sacr-hp4100       #West Sacramento HP LaserJet 4100DN
+#172.16.84.13  sacr-hp4200       #West Sacramento HP LaserJet 4200N for Picks (p
+owered off after going to WMS
+172.16.84.14  sacr-scan         #West Sacramento Savin C2525
+172.16.84.15  sacr-zebra        #West Sacramento Zebra printer
+172.16.84.101 sacr-wap1         #West Sacramento Cisco 1242 WAP #1
+172.16.84.102 sacr-wap2         #West Sacramento Cisco 1242 WAP #2
+
+#Green Bay
+172.16.33.1   greenbay gree  #Green Bay Router
+172.16.33.10  gree-edge      #Green Bay Firebox Edge X10e
+172.16.33.11  gree-hp4050    #Green Bay HP LaserJet 4050TN
+172.16.33.12  gree-hp2200    #Green Bay HP LaserJet 2200DN
+172.16.33.21  gree-ex1       #Green Bay HP JetDirect 500X
+172.16.33.31  gree-1         #Green Bay Workstation
+172.16.33.101 gree-wireless  #Green Bay WAP - cisco 1242
+
+#Rock Hill
+172.16.39.1   rockhill rock    #Rock Hill Router
+172.16.39.2   rock-fs rock_fs  #Rock Hill File Server
+172.16.39.4   rock2140         #Rock Hill ServicePoint DSU/CSU
+172.16.39.5   rock-vm          #Rock Hill Voice Mail Server
+172.16.39.9   rock-cooler      #Rock Hill cooler thermostat
+172.16.39.10  rock-netgate     #Rock Hill Netgate
+172.16.39.11  rock-m4345       #Rock Hill HP M4345 MFP
+172.16.39.12  rock-hp4050      #Rock Hill HP LaserJet 4050TN
+172.16.39.13  rock-hp4000      #Rock Hill HP LaserJet 4000
+172.16.39.14  rock-hp5         #Rock Hill HP LaserJet 5Si
+172.16.39.15  rock-hp4100      #Rock Hill HP LaserJet 4100TN
+172.16.39.16  rock-hp4250      #Rock Hill HP LaserJet 4250n
+172.16.39.17  rock-fop         #Rock Hill HP4050 (front office pack)
+172.16.39.18  rock-hp4101      #Rock Hill HP4100 (SLansdall)
+172.16.39.19  rock-zebra       #Rock Hill Zebra zm400
+#172.16.39.21 rock-ex1         #Rock Hill HP JetDirect EX Plus 3 for invoices
+#172.16.39.22 rock-ex2         #Rock Hill HP JetDirect EX Plus 3 for packs
+#172.16.39.31-90               #Reserved for DHCP
+172.16.39.100 rock-time        #rock timeclock
+172.16.39.101 rock-wap1        #Rock Hill cisco 1242 WAP 1
+172.16.39.102 rock-wap2        #Rock Hill cisco 1242 WAP 2
+172.16.39.103 rock-wap3        #Rock Hill cisco 1242 WAP 3
+172.16.39.104 rock-wap4        #Rock Hill cisco 1242 WAP 4
+
+
+#Minneapolis
+172.16.51.1   minneapolis minn  #Minneapolis Router
+172.16.51.2   minn-fs minn_fs   #Minneapolis File Server
+#172.16.51.8   lino-wap
+172.16.51.11  minn-hp4          #Minneapolis HP LaserJet 4 Plus
+172.16.51.12  minn-hp5          #Minneapolis HP LaserJet 5Si
+172.16.51.13  minn-hp4250       #Minneapolis HP LaserJet 4250n
+172.16.51.14  minn-hp9050       #Minneapolis HP LaserJet 9050 (from Kans)
+172.16.51.15  minn-zebra        #Lino zebra printer
+172.16.51.16  minn-hp4555       #Minneapolis HP LaserJet M4555 mfp
+172.16.51.17  minn-hp401        #Lino HP LaserJet 400 M401n
+#172.16.51.21 minn-ex1          #Minneapolis JetDirect EX Plus 3
+172.16.51.101 minn-wap1         #lino cisco 1242 WAP 1
+172.16.51.102 minn-wap2         #lino cisco 1242 WAP 2
+
+#Fort Worth
+172.16.52.1   fortworth ftwo   #Fort Worth Router
+172.16.52.2   plas-tex         #Fort Worth AS/400
+172.16.52.3   ftwo-fs ftwo_fs  #Fort Worth NetWare File Server
+172.16.52.6   ftwo-wap         #Fort Worth WAP55AG in Office
+172.16.52.9   ftwo-vm          #Fort Worth Voice Mail Server
+172.16.52.10  ftwo-edge        #Fort Worth WatchGuard Firebox Edge X10e
+172.16.52.11  ftwo-hp8150      #Fort Worth HP LaserJet 8150DN
+172.16.52.12  ftwo-hp4101      #Fort Worth HP LaserJet 4100DTN in Shipping
+172.16.52.13  ftwo-hp4102      #Fort Worth HP LaserJet 4100DTN in Office
+172.16.52.14 ftwo-hp4015      #HP LaserJet P4015TN
+172.16.52.15  ftwo-hp4250 ftwo-hp4050  #HP LaserJet 4250 in Warehouse
+172.16.52.16  ftwo-m602        #Fort Worth HP M602
+172.16.52.18  ftwo-zebra       #Fort Worth Zebra printer
+#172.16.52.21 ftwo-ex1         #Fort Worth JetDirect EX Plus 3
+#172.16.52.31-90               #Reserved for DHCP
+172.16.52.100 ftwo-time        #timeclock
+172.16.52.101 ftwo-wap1         #cisco wap 1
+172.16.52.102   ftwo-wap2       #cisco wap 2
+172.16.52.103   ftwo-wap3       #cisco wap 3 - In Office
+
+#Grimes
+172.16.153.2   grim-fs grim_fs desm-fs desm_fs #Grimes Netware File Server
+172.16.153.4   grim-hvac          #Grimes HVAC Controller (on port 8651)
+172.16.153.5   grim-vm desm-vm    #Grimes Voicemail Server
+172.16.153.9   grim-security      #Grimes security pannel
+172.16.153.10  grim-netgate grim desm  #Grimes NetGate router
+172.16.153.11  grim-hp4 desm-hp4       #Grimes HP LaserJet 4 Plus
+172.16.153.12  grim-hp5 desm-hp5       #Grimes HP LaserJet 5si
+172.16.153.13  grim-ljcolor desm-ljcolor  #Grimes HP Color LaserJet 4550
+172.16.153.14  grim-hp9050 desm-hp9050    #Grimes HP LaserJet 9050dn
+172.16.153.15  desm-lanier desm-lanier    #Grimes Lanier Copier/Scanner/Fax
+172.16.153.16  grim-zebra         #Grimes Zebra
+172.16.153.17  grim-hp4540      #Grimes HP CM4540FSKM
+#172.16.153.31-90                 #Grimes DHCP pool
+172.16.153.101 grim-wap1          #Grimes Cisco wap 1242 1
+172.16.153.102 grim-wap2          #Grimes Cisco wap 1242 2
+172.16.153.103 grim-wap3          #Grimes Cisco wap 1242 3
+
+#172.16.53.1   desmoines desm   #Des Moines Router
+#172.16.53.2   desm-fs desm_fs  #Des Moines File Server
+#172.16.53.6   desm-wap         #Des Moines Wireless Access Point
+#172.16.53.10  desm-edge        #Des Moines WatchGuard Firebox Edge X10e
+#172.16.53.11  desm-hp4         #Des Moines HP LaserJet 4 Plus
+#172.16.53.12  desm-hp5         #Des Moines HP LaserJet 5Si
+#172.16.53.13  desm-ljcolor     #Des Moines HP Color LaserJet 4550
+#172.16.53.14  desm-hp9050      #Des Moines HP LaserJet 9050dn
+#172.16.53.15  desm-lanier      #Des Moines Lanier Copier/Scanner/Fax
+#172.16.53.21 desm-ex1         #Des Moines HP JetDirect EX Plus 3
+#172.16.53.31-90               #Reserved for DHCP
+
+#Houston
+172.16.54.1   houston hous     #Houston Router
+172.16.54.2   hous-fs hous_fs  #Houston NetWare File Server
+172.16.54.6   hous-wap         #Houston Linksys WAP610N
+172.16.54.10  hous-soho        #Houston WatchGuard SOHO 6tc
+172.16.54.11  hous-hp8150      #Houston HP LaserJet 8150DN
+172.16.54.12  hous-hp4100      #Houston HP LaserJet 4100DTN
+172.16.54.13  hous-hp9050      #Houston HP LaserJet 9050dn
+172.16.54.14  hous-zebra        #Houston Zebra printer
+172.16.54.15  hous-hp4050       #Houston Rays 4050 printer
+#172.16.54.21 hous-ex1         #Houston JetDirect EX Plus 3
+#172.16.54.31-90               #Reserved for DHCP
+172.16.54.100 hous-time        #timeclock
+172.16.54.101 hous-wap1         #Houston cisco wap #1
+172.16.54.102 hous-wap2         #Houston cisco wap #2
+
+#Katy TX
+172.16.108.1   katy          # Katy Texas netgate
+172.16.108.8   katy-alarm1   # Katy alarm 1
+172.16.108.9   katy-alarm2   # Katy alarm 2
+172.16.108.11  katy-9050     # Katy - HP9050 in Office
+172.16.108.12  katy-4050     # Katy - HP4050 - temp ship printer
+172.16.108.13  katy-zebra    # Katy - Zebra Printer
+172.16.108.14  katy-8150     # Katy - HP8150 - temp temp ship printer
+172.16.108.15  katy-copy     # Katy - Copier / printer
+172.16.108.16  katy-4100     # Katy - HP4100
+172.16.108.101 katy-wap1     # katy - WAP 1 cisco 2601
+172.16.108.102 katy-wap2     # Katy - WAP 2 cisco 2601
+172.16.108.103 katy-wap3     # Katy - WAP 3 cisco 2601
+
+#Kansas City
+172.16.55.1   kansascity kans  #Kansas City Router
+172.16.55.2   kans-fs kans_fs  #Kansas City File Server
+#172.16.55.6   kans-wap         #Kansas City WAP Downstairs
+#172.16.55.7   kans-wap2        #Kansas City WAP Upstairs
+172.16.55.10  kans-netgate     #Kansas City Netgate
+172.16.55.11  kans-hp4         #Kansas City HP LaserJet 4 Plus
+172.16.55.12  kans-hp5         #Kansas City HP LaserJet 5Si
+172.16.55.13  kans-hp4350      #Kansas City HP LaserJet 4350
+172.16.55.14  steele-hp5       #Kansas City HP LaserJet 5Si for Marilyn
+172.16.55.15  kans-hp2015      #Kansas City HP LaserJet P2015dn for Marilyn
+#172.16.55.16  kans-hp9050      #Kansas City HP LaserJet 9050dtn (sent to Minn)
+172.16.55.17  kans-mp2000      #Kansas City Ricoh Aficio MP 2000
+172.16.55.18  ihrig-hp5550      #TIhrig HP Color LaserJet 5550dtn
+172.16.55.19  kans-zebra        #Kansas City Zebra label printer
+172.16.55.21  kans-ex1         #Kansas City HP JetDirect EX Plus 3
+172.16.55.22  kans-ex2         #Kansas City HP JetDirect EX Plus 3
+#172.16.55.31-90               #Reserved for DHCP
+172.16.55.101  kans-wap1        #cisco accesspoint 1
+172.16.55.102  kans-wap2        #cisco accesspoint 2
+172.16.55.103  kans-wap3        #cisco accesspoint 3
+
+#Van Buren
+172.16.59.1   fort vanb
+172.16.59.2   fort-fs vanb-fs fort_fs vanb_fs
+172.16.59.6   vanb-wap54gs
+172.16.59.10  vanb-edge
+#172.16.59.11 fort-hp5 vanb-hp5
+#172.16.59.12 fort-hp4 vanb-hp4
+#172.16.59.13 fort-hp8100        #Moved tgo FTWO
+172.16.59.14  fort-hp2200        #Moved to office
+172.16.59.15  vanb-hp9050 fort-hp9050
+172.16.59.16  vanb-hp4250        #HP 4250 in Warehouse
+172.16.59.17    vanb-zebra      #zebra printer
+172.16.59.18  vanb-scan         #HP ScanJet N6350
+#172.16.59.21 fort-ex1 vanb-ex1
+172.16.59.101   vanb-wap1       #cisco wap 1
+172.16.59.102   vanb-wap2       #cisco wap 2
+
+#Monessen
+172.16.66.1   mone
+172.16.66.2   mone-fs mone_fs
+172.16.66.3   mone-as400
+172.16.66.4   mone-kentrox
+172.16.66.10  mone-edge
+172.16.66.11  mone-8150
+172.16.66.12  mone-4200
+172.16.66.13  mone-2300
+172.16.66.14  mone-color
+172.16.66.15  mone-4350
+172.16.66.16  mone-hp2200 asht-hp2200
+172.16.66.17  mone-zebra
+#172.16.66.18  mone-cannon
+172.16.66.18  mone-ricoh
+#172.16.66.31-90         #Reserved for DHCP
+172.16.66.100 mone-time  #monessen timeclock
+172.16.66.101 mone-wap1  #cisco wap1
+172.16.66.102 mone-wap2  #cisco wap2
+172.16.66.103 mone-wap3  #cisco wap3
+172.16.66.104 mone-wap4  #cisco wap4
+
+#Arlington
+172.16.72.1   wash waof        #Arlington, WA Office Router
+172.16.72.2   wash-fs wash_fs  #NetWare server at Arlington, WA Office
+172.16.72.5   wash-phones      #Arlington phone system control port
+172.16.72.6   wash-wap         #Arlington WAP54G
+172.16.72.10  wash-edge        #Arlington WatchGuard Edge X10e
+#172.16.72.11  wash-hp8100      #Arlington HP LaserJet 8100DN
+172.16.72.12  wash-hp4350 wash-hp4si  #Arlington HP LaserJet 4Si
+172.16.72.13  wash-hp4050      #Arlington HP LaserJet 4050
+172.16.72.14  wash-hp4500      #Arlington HP LaserJet 4500
+172.16.72.15  wash-p4015       #Arlington HP P4015
+172.16.72.16  wash-hp8100      #Arlington HP LaserJet 8100DN
+172.16.72.17  wash-arm277      #Arlington Sharp AR-M277 Scanner
+172.16.72.18  wash-zebra       #Arlingotn Zebra zm400
+#172.16.72.21 wash-ex1         #Arlington EX Box #1
+#172.16.72.22 wash-ex2         #Arlington EX Box #2
+#172.16.72.23 wash-ex3         #Arlington EX Box #3
+#172.16.72.30-89  Arlington DHCP pool ???
+172.16.72.98  wash2140         #Arlington T1 Add/Drop SDU
+172.16.72.101 wash-wap1        #Arlington Cisco 1242 WAP
+172.16.72.102 wash-wap1        #Arlington Cisco 1242 WAP
+
+#Vancouver
+172.16.74.1   vanc             #Vancouver, WA Router
+172.16.74.2   vanc-fs vanc_fs  #NetWare server at Vancouver, WA Office
+172.16.74.6   vanc-wap         #Linksys WAP54G
+172.16.74.9   vanc-vm          #Vancouver Voicemail System
+172.16.74.10  vanc-edge        #Watchguard Firebox X10e
+172.16.74.12  vanc-hp8100  vanc-m4345    #Vancouver HP LaserJet 8100DN
+172.16.74.13  vanc-hp4250      #Vancouver HP LaserJet 4250TN
+172.16.74.14  vanc-hp4100      #Vancouver HP LaserJet 4100 (from Made)
+172.16.74.15  vanc-zebra       #Vancouver Zebra Printer
+172.16.74.101 vanc-wap1        #Vancouver cisco 1242 WAP #1
+
+#Salt Lake City
+172.16.76.1   salt           #Salt Lake City Router
+172.16.76.2   slc-fs SLC_FS  #Salt Lake City NetWare 6.5 Server
+172.16.76.10  salt-soho      #Salt Lake SOHO 6tc
+172.16.76.11  salt-hp8100    #Salt Lake HP LaserJet 8100DN
+172.16.76.12  salt-hp4100    #Salt Lake HP LaserJet 4100DN
+172.16.76.13  salt-hp4200    #Salt Lake HP LaserJet 4200DTN
+172.16.76.14  salt-sharp     #Salt Lake Sharp Copier/Scanner/Fax/Printer
+172.16.76.15  salt-zebra     #Salt Lake Zebra zm400
+172.16.76.101 salt-wap1      #salt lake cisco 1242 #1
+172.16.76.102 salt-wap2      #salt lake cisco 1242 #2
+
+#Phoenix
+# note: default gateway is 172.16.82.10
+#172.16.86.1   phoe             #Phoenix Router
+#172.16.86.2   phoe-fs phoe_fs  #Phoenix File Server
+172.16.86.10  phoe phoe-netgate     #Phoneix Netgate
+172.16.86.11  phoe-xerox4150   #Phoenix Xerox WorkCentre 4150
+172.16.86.12  phoe-hp4050      #Phoenix HP LaserJet 4050TN
+172.16.86.13  phoe-zebra       #Phoenix zebra zm400
+172.16.86.14  phoe-hp4555      #Phoenix HP M4555 MFP
+172.16.86.20  phoe-ex1         #Phoenix EX Box #1
+172.16.86.21  phoe-ex2         #Phoenix EX Box #2
+172.16.86.101 phoe-wap1        #phoenix cisco 1242 wap 1
+172.16.86.102 phoe-wap2        #phoenix cisco 1242 wap 2
+
+#Langley
+172.16.92.1   lang             #Langley Router
+172.16.92.2   lang-fs lang_fs  #Langley File Server
+172.16.92.6   lang-wap         #Langley DLink DAP-1360
+172.16.92.10  lang-edge        #Langley Edge X10e
+172.16.92.11  lang-hp8100 lang-hp401     #Langley HP LaserJet 400 M401dne
+172.16.92.12  lang-hp4050      #Langley HP LaserJet 4050TN
+172.16.92.13  lang-hp4000      #Langley HP LaserJet 4000
+172.16.92.14  lang-scan        #Langley HP MFP M4555
+172.16.92.15  lang-zebra       #Langley Zebra zm400
+#172.16.92.30-89 dhcp pool
+172.16.92.101 lang-wap1        #Langley cisco 1242 wap 1
+
+#Smithfield
+172.16.138.1    smit         #Smithfield, NC Router
+#172.16.138.11  smit-hp4050  #Moved to RH
+#172.16.138.12  smit-hp4100  #Moved to RH
+#172.16.138.21  smit-ex1     #Smithfield EX Box #1
+#172.16.138.31               #Moved to RH
+#172.16.138.32               #Moved to RH
+#172.16.138.100 smit-time    #smithfield timeclock
+
+#Tampa
+#192.168.1.1    tamp-firebox tamp
+#192.168.1.10   tamp-srvr1   #Windows 2003 server Primary DNS
+#192.168.1.11   tamp-srvr2   #Windows 2003 server Secondary DNS
+#192.168.1.27  tamp-hp5     #Moved to Lakeland
+#192.168.1.26  tamp-hp8100  #Moved to Lakeland
+#192.168.1.35  tamp-hp2420  #Moved to Lakeland
+#192.168.1.36  tamp-hp2421  #Moved to Lakeland
+#192.168.1.246 tamp-canon   #Moved to Lakeland
+
+#Acworth
+#192.168.2.1    acwo-firebox acwo
+#192.168.2.30  acwo-hp2300  #Moved to LAWR
+#192.168.2.32  acwo-p3005   #Moved to LAWR
+#192.168.2.117 acwo-hp2420  #Moved to LAWR
+
+#Fort Myers
+#192.168.3.1    ftmy-firebox ftmy
+#192.168.3.11  ftmy-hp3055
+#192.168.3.27  ftmy-hp4050
+#192.168.3.34  ftmy-hp2301  #Moved to LAKE
+#192.168.3.70  ftmy-hp2302  #Moved to LAKE
+#192.168.3.97  ftmy-hp2303  #HP LaserJet 2300 at Front Counter
+
+#Bruce Lau's Home
+192.168.119.1   blau-soho       #Bruce Lau's Soho
+192.168.119.10  blau-hp5n       #HP Laser Jet 5N
+192.168.119.11  blau-hpoj6310   #Bruce Lau Officejet 6310xi
+
+#Kelowna
+192.168.121.1   kelo kelo-edge  #Watchguard Edge X10e
+192.168.121.2   kelo-hp4050     #HP LaserJet 4050
+#192.168.121.5                  #Reserved for DHCP .5 and up
+#192.168.121.6 kelo-linksys
+192.168.121.101 kelo-wap1       #cisco 1242
+
+#GLS Europe Office
+192.168.132.1   euro-soho
+192.168.132.11  eu-clj2500  #HP Color LaserJet 2500n
+
+#GLS Cary Warehouse
+#192.168.136.1  cary-soho        #Watchguard SOHO6tc
+#192.168.136.2  yvonne-ireland   #Yvonne Ireland's Desktop
+#192.168.136.3  cary2            #Desktop for Printronix Printer
+172.16.21.221   cary-4350        #HP LaserJet 4350n
+#192.168.136.21 cary-printronics #Printronics label printer on Jet Direct
+172.16.21.222   cary-zebra       #Zebra Label Printer
+
+# PolyOne muVPN from Gagganau
+#192.168.22.70  gagg-vpn1  #MUVPN for remote printing
+# PolyOne direct printer in Gagganau
+#10.244.10.64  gagg-vpn1  #direct to gagganau printer (unknown type)
+172.16.20.132  gagg-vpn1  #direct to gagganau printer (unknown type)
+
+#Hong Kong
+192.168.146.1   hk-soho hong  #Watchguard SOHO
+192.168.146.12  hk-4300       #HP LaserJet 4300dtn
+192.168.146.11  hk-3500       #HP Color LaserJet 3500n
+
+#Shanghai
+192.168.147.1   shai-edge shai  #Watchguard X10e
+192.168.147.6   shai-wap        #Linksys WG102 WAP
+192.168.147.11  shai-hp2840     #HP Color LaserJet 2840
+192.168.147.12  shai-hp4250     #HP Color LaserJet HP4250dtn
+
+#Andrews, TX
+192.168.152.1   drew drew-edge  #Watchguard X10e
+192.168.152.2   drew-wap        #Linksys WAP54g
+192.168.152.11  drew-hp4100     #HP LaserJet 4250
+#192.168.152.31-90              #Reserved for DHCP
+192.168.152.101 drew-wap1       #cisco wap 1
+
+#Alexandria
+172.16.154.1   alex alex-edge  #Watchguard Firebox Edge X10e
+#172.16.154.6   alex-wap        #Linksys WAP55AG
+172.16.154.11  alex-hp4250     #HP LaserJet 4250
+172.16.154.12  alex-m602       #HP LaserJet M602
+#172.16.154.31-90              #Reserverd for DHCP
+172.16.154.101 alex-wap1        #cisco wap 1
+
+#==============================================================
+# Network Numbers
+#    use 172.16 as the b class license for all new subnets
+#172.16.
+# 1 Argo, IL
+# 3 Woodstock, IL
+# 5 Ashtabula, OH
+# 6 Goshen, IN
+# 7 Dayton, OH
+# 8 Lakeland, FL
+# 10 Medley, FL
+# 14 Valdosta, GA
+# 17 Arlington Heights, IL
+# 19 Geneva, OH Warehouse - Truckman's
+# 20 McHenry, IL  -- TED
+# 121 Lawrenceville, GA
+# 21 Santa Fe Springs, CA
+# 23 Bristol, RI
+# 24 Elkhart, IN
+# 25 Millville, NJ
+# 125 Nashville, TN
+# 26 Madera, CA
+# 33 Green Bay, WI
+# 39 Rock Hill, SC
+# 51 Minneapolis, MN
+# 52 Fort Worth, TX
+# 53 Des Moines, IA (old site)
+# 54 Houston, TX
+# 55 Kansas City, MO
+# 59 Van Buren, AR
+# 72 Arlington, WA
+# 74 Vancouver, WA
+# 76 Salt Lake City, UT
+# 84 West Sacramento, CA
+# 86 Phoenix, AZ
+# 92 Langley, BC
+# 138 Smithfield, NC
+# 153 Grimes, IA
+# 154 Alexandria, LA
+# 162 Rockland, MA
+# 216 Tampa, FL
+# 218 Fort Myers, FL
+# 220 Acworth, GA
+#192.168.
+# 1 Tampa, FL
+# 2 Acworth, GA
+# 3 Fort Myers, FL
+# 117 Kevin McDaniel's Home
+# 118 Paul Weyna's Home
+# 119 Bruce Lau's Home
+# 120 Steve Samluk's Home
+# 121 Kelowna Office - user:admin pass:franklin
+# 122 Nancy Dehmlow's Home
+# 123 Nick Lewers' Home
+# 124 Hal Greene's Home
+# 125 Steve Dehmlow's Home
+# 126 TED-Netherlands Network - user:glsinter pass:jsimons
+# 128 Jennifer Smith's Home
+# 129 Dave Ohanian's Home
+# 130 Walter Ripple's Home
+# 131 Rens Kesteloo's Home
+# 132 Jack van Gaans' Office - TED Europe
+# 136 GLS Cary Warehouse
+# 143 PPTP VPN Network
+# 144 MUVPN Network
+# 145 MUVPN Network 2
+# 146 GLS International Hong Kong Office
+# 147 Shanghai Network
+# 152 Andrews, TX
+# ==============================================================
