@@ -1,0 +1,432 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Jobs>
+  <ApplicationJob xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <WebsiteUrl />
+    <UserAgent />
+    <UserNotes />
+    <LastFileSize>1444352</LastFileSize>
+    <LastFileDate xsi:nil="true" />
+    <IgnoreFileInformation>false</IgnoreFileInformation>
+    <DownloadBeta>Default</DownloadBeta>
+    
+    <CheckForUpdatesOnly>false</CheckForUpdatesOnly>
+    <VariableChangeIndicator />
+    <CanBeShared>true</CanBeShared>
+    <ShareApplication>false</ShareApplication>
+    <ExclusiveDownload>false</ExclusiveDownload>
+    <HttpReferer />
+    <SetupInstructions>
+      <SetupInstruction xsi:type="StartProcessInstruction">
+        <EnvironmentVariables />
+        <FileName>"{file}"</FileName>
+        <Parameters>/qn</Parameters>
+        <WaitForExit>true</WaitForExit>
+      </SetupInstruction>
+    </SetupInstructions>
+    <Variables />
+    <ExecuteCommand />
+    <ExecutePreCommand />
+    <ExecuteCommandType>Batch</ExecuteCommandType>
+    <ExecutePreCommandType>Batch</ExecutePreCommandType>
+    <Category />
+    <SourceType>FileHippo</SourceType>
+    
+    <DeletePreviousFile>true</DeletePreviousFile>
+    <Enabled>true</Enabled>
+    <FileHippoId>7-zip_64</FileHippoId>
+    
+    <TargetPath>C:\Users\%username%\Desktop\C1\Files\Ketarin\Programs\Other\</TargetPath>
+    <FixedDownloadUrl />
+    <Name>7Zip</Name>
+  </ApplicationJob>
+  <ApplicationJob xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <WebsiteUrl />
+    <UserAgent />
+    <UserNotes />
+    <LastFileSize>50837888</LastFileSize>
+    <LastFileDate xsi:nil="true" />
+    <IgnoreFileInformation>false</IgnoreFileInformation>
+    <DownloadBeta>Default</DownloadBeta>
+    
+    <CheckForUpdatesOnly>false</CheckForUpdatesOnly>
+    <VariableChangeIndicator />
+    <CanBeShared>true</CanBeShared>
+    <ShareApplication>false</ShareApplication>
+    <ExclusiveDownload>false</ExclusiveDownload>
+    <HttpReferer />
+    <SetupInstructions>
+      <SetupInstruction xsi:type="StartProcessInstruction">
+        <EnvironmentVariables />
+        <FileName>"{file}"</FileName>
+        <Parameters>/msi EULA_ACCEPT=YES /qn</Parameters>
+        <WaitForExit>true</WaitForExit>
+      </SetupInstruction>
+    </SetupInstructions>
+    <Variables />
+    <ExecuteCommand />
+    <ExecutePreCommand />
+    <ExecuteCommandType>Batch</ExecuteCommandType>
+    <ExecutePreCommandType>Batch</ExecutePreCommandType>
+    <Category />
+    <SourceType>FileHippo</SourceType>
+    
+    <DeletePreviousFile>true</DeletePreviousFile>
+    <Enabled>true</Enabled>
+    <FileHippoId>adobe_reader</FileHippoId>
+    
+    <TargetPath>C:\Users\%username%\Desktop\C1\Files\Ketarin\Programs\Players-Plugins\</TargetPath>
+    <FixedDownloadUrl />
+    <Name>Adobe Reader</Name>
+  </ApplicationJob>
+  <ApplicationJob xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <WebsiteUrl />
+    <UserAgent />
+    <UserNotes />
+    <LastFileSize>4645232</LastFileSize>
+    <LastFileDate xsi:nil="true" />
+    <IgnoreFileInformation>false</IgnoreFileInformation>
+    <DownloadBeta>Default</DownloadBeta>
+    
+    <CheckForUpdatesOnly>false</CheckForUpdatesOnly>
+    <VariableChangeIndicator />
+    <CanBeShared>true</CanBeShared>
+    <ShareApplication>false</ShareApplication>
+    <ExclusiveDownload>false</ExclusiveDownload>
+    <HttpReferer />
+    <SetupInstructions>
+      <SetupInstruction xsi:type="StartProcessInstruction">
+        <EnvironmentVariables />
+        <FileName>"{file}"</FileName>
+        <Parameters>/S</Parameters>
+        <WaitForExit>true</WaitForExit>
+      </SetupInstruction>
+    </SetupInstructions>
+    <Variables />
+    <ExecuteCommand />
+    <ExecutePreCommand />
+    <ExecuteCommandType>Batch</ExecuteCommandType>
+    <ExecutePreCommandType>Batch</ExecutePreCommandType>
+    <Category />
+    <SourceType>FileHippo</SourceType>
+    
+    <DeletePreviousFile>true</DeletePreviousFile>
+    <Enabled>true</Enabled>
+    <FileHippoId>ccleaner</FileHippoId>
+    
+    <TargetPath>C:\Users\%username%\Desktop\C1\Files\Ketarin\Programs\System Maint\</TargetPath>
+    <FixedDownloadUrl />
+    <Name>CCleaner</Name>
+  </ApplicationJob>
+  <ApplicationJob xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <WebsiteUrl />
+    <UserAgent />
+    <UserNotes />
+    <LastFileSize>4699456</LastFileSize>
+    <LastFileDate xsi:nil="true" />
+    <IgnoreFileInformation>false</IgnoreFileInformation>
+    <DownloadBeta>Default</DownloadBeta>
+    
+    <CheckForUpdatesOnly>false</CheckForUpdatesOnly>
+    <VariableChangeIndicator />
+    <CanBeShared>true</CanBeShared>
+    <ShareApplication>false</ShareApplication>
+    <ExclusiveDownload>false</ExclusiveDownload>
+    <HttpReferer />
+    <SetupInstructions>
+      <SetupInstruction xsi:type="CustomSetupInstruction">
+        <Code>"C:\Users\%username%\Desktop\C1SetupUtility\Files\Scripts\Batch\Cute.bat"</Code>
+        <Type>Batch</Type>
+      </SetupInstruction>
+    </SetupInstructions>
+    <Variables />
+    <ExecuteCommand>"C:\Users\%username%\Desktop\C1\Files\Software\gs910w64.exe" /S /NCRC</ExecuteCommand>
+    <ExecutePreCommand />
+    <ExecuteCommandType>Batch</ExecuteCommandType>
+    <ExecutePreCommandType>Batch</ExecutePreCommandType>
+    <Category />
+    <SourceType>FileHippo</SourceType>
+    
+    <DeletePreviousFile>true</DeletePreviousFile>
+    <Enabled>true</Enabled>
+    <FileHippoId>cutepdf_writer</FileHippoId>
+    
+    <TargetPath>C:\Users\%username%\Desktop\C1\Files\Ketarin\Programs\Other\</TargetPath>
+    <FixedDownloadUrl />
+    <Name>CutePDF</Name>
+  </ApplicationJob>
+  <ApplicationJob xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <WebsiteUrl />
+    <UserAgent />
+    <UserNotes />
+    <LastFileSize>4208656</LastFileSize>
+    <LastFileDate xsi:nil="true" />
+    <IgnoreFileInformation>false</IgnoreFileInformation>
+    <DownloadBeta>Default</DownloadBeta>
+    
+    <CheckForUpdatesOnly>false</CheckForUpdatesOnly>
+    <VariableChangeIndicator />
+    <CanBeShared>true</CanBeShared>
+    <ShareApplication>false</ShareApplication>
+    <ExclusiveDownload>false</ExclusiveDownload>
+    <HttpReferer />
+    <SetupInstructions>
+      <SetupInstruction xsi:type="StartProcessInstruction">
+        <EnvironmentVariables />
+        <FileName>"{file}"</FileName>
+        <Parameters>/S</Parameters>
+        <WaitForExit>true</WaitForExit>
+      </SetupInstruction>
+    </SetupInstructions>
+    <Variables />
+    <ExecuteCommand />
+    <ExecutePreCommand />
+    <ExecuteCommandType>Batch</ExecuteCommandType>
+    <ExecutePreCommandType>Batch</ExecutePreCommandType>
+    <Category />
+    <SourceType>FileHippo</SourceType>
+    
+    <DeletePreviousFile>true</DeletePreviousFile>
+    <Enabled>true</Enabled>
+    <FileHippoId>defraggler</FileHippoId>
+    
+    <TargetPath>C:\Users\%username%\Desktop\C1\Files\Ketarin\Programs\System Maint\</TargetPath>
+    <FixedDownloadUrl />
+    <Name>Defraggler</Name>
+  </ApplicationJob>
+  <ApplicationJob xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <WebsiteUrl />
+    <UserAgent />
+    <UserNotes />
+    <LastFileSize>31694848</LastFileSize>
+    <LastFileDate xsi:nil="true" />
+    <IgnoreFileInformation>false</IgnoreFileInformation>
+    <DownloadBeta>Default</DownloadBeta>
+    
+    <CheckForUpdatesOnly>false</CheckForUpdatesOnly>
+    <VariableChangeIndicator />
+    <CanBeShared>true</CanBeShared>
+    <ShareApplication>false</ShareApplication>
+    <ExclusiveDownload>false</ExclusiveDownload>
+    <HttpReferer />
+    <SetupInstructions>
+      <SetupInstruction xsi:type="StartProcessInstruction">
+        <EnvironmentVariables />
+        <FileName>"{file}"</FileName>
+        <Parameters>/qn /norestart</Parameters>
+        <WaitForExit>true</WaitForExit>
+      </SetupInstruction>
+    </SetupInstructions>
+    <Variables />
+    <ExecuteCommand />
+    <ExecutePreCommand />
+    <ExecuteCommandType>Batch</ExecuteCommandType>
+    <ExecutePreCommandType>Batch</ExecutePreCommandType>
+    <Category />
+    <SourceType>FileHippo</SourceType>
+    
+    <DeletePreviousFile>true</DeletePreviousFile>
+    <Enabled>true</Enabled>
+    <FileHippoId>google_drive</FileHippoId>
+    
+    <TargetPath>C:\Users\%username%\Desktop\C1\Files\Ketarin\Programs\Other</TargetPath>
+    <FixedDownloadUrl />
+    <Name>Google Drive</Name>
+  </ApplicationJob>
+  <ApplicationJob xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <WebsiteUrl />
+    <UserAgent />
+    <UserNotes />
+    <LastFileSize>29141928</LastFileSize>
+    <LastFileDate xsi:nil="true" />
+    <IgnoreFileInformation>false</IgnoreFileInformation>
+    <DownloadBeta>Default</DownloadBeta>
+    
+    <CheckForUpdatesOnly>false</CheckForUpdatesOnly>
+    <VariableChangeIndicator />
+    <CanBeShared>true</CanBeShared>
+    <ShareApplication>false</ShareApplication>
+    <ExclusiveDownload>false</ExclusiveDownload>
+    <HttpReferer />
+    <SetupInstructions>
+      <SetupInstruction xsi:type="StartProcessInstruction">
+        <EnvironmentVariables />
+        <FileName>"{file}"</FileName>
+        <Parameters>/s</Parameters>
+        <WaitForExit>true</WaitForExit>
+      </SetupInstruction>
+    </SetupInstructions>
+    <Variables />
+    <ExecuteCommand />
+    <ExecutePreCommand />
+    <ExecuteCommandType>Batch</ExecuteCommandType>
+    <ExecutePreCommandType>Batch</ExecutePreCommandType>
+    <Category />
+    <SourceType>FileHippo</SourceType>
+    
+    <DeletePreviousFile>true</DeletePreviousFile>
+    <Enabled>true</Enabled>
+    <FileHippoId>jre_32</FileHippoId>
+    
+    <TargetPath>C:\Users\%username%\Desktop\C1\Files\Ketarin\Programs\Players-Plugins\</TargetPath>
+    <FixedDownloadUrl />
+    <Name>Java 64bit</Name>
+  </ApplicationJob>
+  <ApplicationJob xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <WebsiteUrl />
+    <UserAgent />
+    <UserNotes />
+    <LastFileSize>10285040</LastFileSize>
+    <LastFileDate xsi:nil="true" />
+    <IgnoreFileInformation>false</IgnoreFileInformation>
+    <DownloadBeta>Default</DownloadBeta>
+    
+    <CheckForUpdatesOnly>false</CheckForUpdatesOnly>
+    <VariableChangeIndicator />
+    <CanBeShared>true</CanBeShared>
+    <ShareApplication>false</ShareApplication>
+    <ExclusiveDownload>false</ExclusiveDownload>
+    <HttpReferer />
+    <SetupInstructions>
+      <SetupInstruction xsi:type="StartProcessInstruction">
+        <EnvironmentVariables />
+        <FileName>"{file}"</FileName>
+        <Parameters>/VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP-</Parameters>
+        <WaitForExit>true</WaitForExit>
+      </SetupInstruction>
+    </SetupInstructions>
+    <Variables />
+    <ExecuteCommand />
+    <ExecutePreCommand />
+    <ExecuteCommandType>Batch</ExecuteCommandType>
+    <ExecutePreCommandType>Batch</ExecutePreCommandType>
+    <Category />
+    <SourceType>FileHippo</SourceType>
+    
+    <DeletePreviousFile>true</DeletePreviousFile>
+    <Enabled>true</Enabled>
+    <FileHippoId>malwarebytes_anti_malware</FileHippoId>
+    
+    <TargetPath>C:\Users\%username%\Desktop\C1\Files\Ketarin\Programs\Anti-Malware\</TargetPath>
+    <FixedDownloadUrl />
+    <Name>Malwarebytes</Name>
+  </ApplicationJob>
+  <ApplicationJob xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <WebsiteUrl />
+    <UserAgent />
+    <UserNotes />
+    <LastFileSize>41404760</LastFileSize>
+    <LastFileDate xsi:nil="true" />
+    <IgnoreFileInformation>false</IgnoreFileInformation>
+    <DownloadBeta>Default</DownloadBeta>
+    
+    <CheckForUpdatesOnly>false</CheckForUpdatesOnly>
+    <VariableChangeIndicator />
+    <CanBeShared>true</CanBeShared>
+    <ShareApplication>false</ShareApplication>
+    <ExclusiveDownload>false</ExclusiveDownload>
+    <HttpReferer />
+    <SetupInstructions>
+      <SetupInstruction xsi:type="CustomSetupInstruction">
+        <Code>"C:\Users\%username%\Desktop\C1\Files\Ketarin\7za.exe" X "C:\Users\Win7\Desktop\C1\Files\Ketarin\Programs\Players-Plugins\QuickTimeInstaller.exe" -oC:\Users\%username%\Desktop\C1\Files\Software\QuickTimeInstaller
+msiexec.exe /I "C:\Users\%username%\Desktop\C1\Files\Software\QuickTimeInstaller\QuickTime.msi" /passive DESKTOP_SHORTCUTS=NO SCHEDULE_ASUW=0 ASUWINSTALLED=0
+msiexec.exe /I "C:\Users\%username%\Desktop\C1\Files\Software\QuickTimeInstaller\AppleSoftwareUpdate.msi" /qn
+msiexec.exe /I "C:\Users\%username%\Desktop\C1\Files\Software\QuickTimeInstaller\AppleApplicationSupport.msi" /qn
+schtasks /delete /tn "Apple\AppleSoftwareUpdate" /f</Code>
+        <Type>Batch</Type>
+      </SetupInstruction>
+    </SetupInstructions>
+    <Variables />
+    <ExecuteCommand />
+    <ExecutePreCommand />
+    <ExecuteCommandType>Batch</ExecuteCommandType>
+    <ExecutePreCommandType>Batch</ExecutePreCommandType>
+    <Category />
+    <SourceType>FileHippo</SourceType>
+    
+    <DeletePreviousFile>true</DeletePreviousFile>
+    <Enabled>true</Enabled>
+    <FileHippoId>quicktime_player</FileHippoId>
+    
+    <TargetPath>C:\Users\%username%\Desktop\C1\Files\Ketarin\Programs\Players-Plugins\</TargetPath>
+    <FixedDownloadUrl />
+    <Name>Quicktime</Name>
+  </ApplicationJob>
+  <ApplicationJob xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <WebsiteUrl />
+    <UserAgent />
+    <UserNotes />
+    <LastFileSize>4779896</LastFileSize>
+    <LastFileDate xsi:nil="true" />
+    <IgnoreFileInformation>false</IgnoreFileInformation>
+    <DownloadBeta>Default</DownloadBeta>
+    
+    <CheckForUpdatesOnly>false</CheckForUpdatesOnly>
+    <VariableChangeIndicator />
+    <CanBeShared>true</CanBeShared>
+    <ShareApplication>false</ShareApplication>
+    <ExclusiveDownload>false</ExclusiveDownload>
+    <HttpReferer />
+    <SetupInstructions>
+      <SetupInstruction xsi:type="StartProcessInstruction">
+        <EnvironmentVariables />
+        <FileName>"{file}"</FileName>
+        <Parameters>/S</Parameters>
+        <WaitForExit>true</WaitForExit>
+      </SetupInstruction>
+    </SetupInstructions>
+    <Variables />
+    <ExecuteCommand />
+    <ExecutePreCommand />
+    <ExecuteCommandType>Batch</ExecuteCommandType>
+    <ExecutePreCommandType>Batch</ExecutePreCommandType>
+    <Category />
+    <SourceType>FileHippo</SourceType>
+    
+    <DeletePreviousFile>true</DeletePreviousFile>
+    <Enabled>true</Enabled>
+    <FileHippoId>speccy</FileHippoId>
+    
+    <TargetPath>C:\Users\%username%\Desktop\C1\Files\Ketarin\Programs\System Maint\</TargetPath>
+    <FixedDownloadUrl />
+    <Name>Speccy</Name>
+  </ApplicationJob>
+  <ApplicationJob xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <WebsiteUrl />
+    <UserAgent />
+    <UserNotes />
+    <LastFileSize>29393568</LastFileSize>
+    <LastFileDate xsi:nil="true" />
+    <IgnoreFileInformation>false</IgnoreFileInformation>
+    <DownloadBeta>Default</DownloadBeta>
+    
+    <CheckForUpdatesOnly>false</CheckForUpdatesOnly>
+    <VariableChangeIndicator />
+    <CanBeShared>true</CanBeShared>
+    <ShareApplication>false</ShareApplication>
+    <ExclusiveDownload>false</ExclusiveDownload>
+    <HttpReferer />
+    <SetupInstructions>
+      <SetupInstruction xsi:type="StartProcessInstruction">
+        <EnvironmentVariables />
+        <FileName>"{file}"</FileName>
+        <Parameters>/silent</Parameters>
+        <WaitForExit>true</WaitForExit>
+      </SetupInstruction>
+    </SetupInstructions>
+    <Variables />
+    <ExecuteCommand />
+    <ExecutePreCommand />
+    <ExecuteCommandType>Batch</ExecuteCommandType>
+    <ExecutePreCommandType>Batch</ExecutePreCommandType>
+    <Category />
+    <SourceType>FileHippo</SourceType>
+    
+    <DeletePreviousFile>true</DeletePreviousFile>
+    <Enabled>true</Enabled>
+    <FileHippoId>superantispyware</FileHippoId>
+    
+    <TargetPath>C:\Users\%username%\Desktop\C1\Files\Ketarin\Programs\Anti-Malware\</TargetPath>
+    <FixedDownloadUrl />
+    <Name>SuperAntiSpyware</Name>
+  </ApplicationJob>
+</Jobs>
