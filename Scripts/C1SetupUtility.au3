@@ -124,7 +124,7 @@ SplashOff()
 						Exit
 					Case $Gui1MenuHelp
 					Case $Gui1MenuAbout
-						MsgBox(64, "About", "C1 Setup UtilityÂ®" & @CRLF & "Version 3.0" & @CRLF & @CRLF & @CRLF & "Created by Mike Swatek" & @CRLF & "Â©2014 Composites One. All rights reserved.")
+						MsgBox(64, "About", "C1 Setup Utility®" & @CRLF & "Version 3.0" & @CRLF & @CRLF & @CRLF & "Created by Mike Swatek" & @CRLF & "©2014 Composites One. All rights reserved.")
 					Case $Gui1MenuInfo
 						ShellExecute(@DesktopDir & "\C1SetupUtility\Files\Scripts\HostTable.txt")
 					Case $hButton1
@@ -153,7 +153,7 @@ SplashOff()
 						GUICtrlSetState($hButton4, $GUI_ENABLE)
 					Case $Gui2MenuHelp
 					Case $Gui2MenuAbout
-						MsgBox(64, "About", "C1 Setup UtilityÂ®" & @CRLF & "Version 3.0" & @CRLF & @CRLF & @CRLF & "Created by Mike Swatek" & @CRLF & "Â©2014 Composites One. All rights reserved.")
+						MsgBox(64, "About", "C1 Setup Utility®" & @CRLF & "Version 3.0" & @CRLF & @CRLF & @CRLF & "Created by Mike Swatek" & @CRLF & "©2014 Composites One. All rights reserved.")
 					Case $Gui2MenuInfo
 						ShellExecute(@DesktopDir & "\C1SetupUtility\Files\Scripts\HostTable.txt")
 					Case $Gui2MenuAuto
@@ -202,7 +202,7 @@ SplashOff()
 						GUICtrlSetState($hButton12, $GUI_ENABLE)
 					Case $Gui3MenuHelp
 					Case $Gui3MenuAbout
-						MsgBox(64, "About", "C1 Setup UtilityÂ®" & @CRLF & "Version 3.0" & @CRLF & @CRLF & @CRLF & "Created by Mike Swatek" & @CRLF & "Â©2014 Composites One. All rights reserved.")
+						MsgBox(64, "About", "C1 Setup Utility®" & @CRLF & "Version 3.0" & @CRLF & @CRLF & @CRLF & "Created by Mike Swatek" & @CRLF & "©2014 Composites One. All rights reserved.")
 					Case $Gui3MenuInfo
 						ShellExecute(@DesktopDir & "\C1SetupUtility\Files\Scripts\HostTable.txt")
 					Case $hButton16
@@ -254,7 +254,7 @@ SplashOff()
 						GUICtrlSetState($hGUI3, $GUI_ENABLE)
 					Case $hGui6MenuHelp
 					Case $hGui6MenuAbout
-						MsgBox(64, "About", "C1 Setup UtilityÂ®" & @CRLF & "Version 3.0" & @CRLF & @CRLF & @CRLF & "Created by Mike Swatek" & @CRLF & "Â©2014 Composites One. All rights reserved.")
+						MsgBox(64, "About", "C1 Setup Utility®" & @CRLF & "Version 3.0" & @CRLF & @CRLF & @CRLF & "Created by Mike Swatek" & @CRLF & "©2014 Composites One. All rights reserved.")
 					Case $hGui6MenuHost
 						ShellExecute(@DesktopDir & "\C1SetupUtility\Files\Scripts\HostTable.txt")
 					Case $hButton28
@@ -274,7 +274,7 @@ SplashOff()
 						GUICtrlSetState($hGUI3, $GUI_ENABLE)
 					Case $hGui6MenuHelp
 					Case $hGui6MenuAbout
-						MsgBox(64, "About", "C1 Setup UtilityÂ®" & @CRLF & "Version 3.0" & @CRLF & @CRLF & @CRLF & "Created by Mike Swatek" & @CRLF & "Â©2014 Composites One. All rights reserved.")
+						MsgBox(64, "About", "C1 Setup Utility®" & @CRLF & "Version 3.0" & @CRLF & @CRLF & @CRLF & "Created by Mike Swatek" & @CRLF & "©2014 Composites One. All rights reserved.")
 					Case $hGui6MenuHost
 						ShellExecute(@DesktopDir & "\C1SetupUtility\Files\Scripts\HostTable.txt")
 					Case $hButton30
@@ -294,7 +294,7 @@ SplashOff()
 						GUICtrlSetState($hGUI3, $GUI_ENABLE)
 					Case $hGui6MenuHelp
 					Case $hGui6MenuAbout
-						MsgBox(64, "About", "C1 Setup UtilityÂ®" & @CRLF & "Version 3.0" & @CRLF & @CRLF & @CRLF & "Created by Mike Swatek" & @CRLF & "Â©2014 Composites One. All rights reserved.")
+						MsgBox(64, "About", "C1 Setup Utility®" & @CRLF & "Version 3.0" & @CRLF & @CRLF & @CRLF & "Created by Mike Swatek" & @CRLF & "©2014 Composites One. All rights reserved.")
 					Case $hGui6MenuHost
 						ShellExecute(@DesktopDir & "\C1SetupUtility\Files\Scripts\HostTable.txt")
 					Case $hButton32
@@ -314,7 +314,7 @@ SplashOff()
 						GUICtrlSetState($hGUI3, $GUI_ENABLE)
 					Case $hGui6MenuHelp
 					Case $hGui6MenuAbout
-						MsgBox(64, "About", "C1 Setup UtilityÂ®" & @CRLF & "Version 3.0" & @CRLF & @CRLF & @CRLF & "Created by Mike Swatek" & @CRLF & "Â©2014 Composites One. All rights reserved.")
+						MsgBox(64, "About", "C1 Setup Utility®" & @CRLF & "Version 3.0" & @CRLF & @CRLF & @CRLF & "Created by Mike Swatek" & @CRLF & "©2014 Composites One. All rights reserved.")
 					Case $hGui6MenuHost
 						ShellExecute(@DesktopDir & "\C1SetupUtility\Files\Scripts\HostTable.txt")
 					Case $hButton34
@@ -334,7 +334,7 @@ SplashOff()
 						GUICtrlSetState($hGUI3, $GUI_ENABLE)
 					Case $hGui6MenuHelp
 					Case $hGui6MenuAbout
-						MsgBox(64, "About", "C1 Setup UtilityÂ®" & @CRLF & "Version 3.0" & @CRLF & @CRLF & @CRLF & "Created by Mike Swatek" & @CRLF & "Â©2014 Composites One. All rights reserved.")
+						MsgBox(64, "About", "C1 Setup Utility®" & @CRLF & "Version 3.0" & @CRLF & @CRLF & @CRLF & "Created by Mike Swatek" & @CRLF & "©2014 Composites One. All rights reserved.")
 					Case $hGui6MenuHost
 						ShellExecute(@DesktopDir & "\C1SetupUtility\Files\Scripts\HostTable.txt")
 					Case $hButton36
@@ -701,8 +701,8 @@ Func LogMeIn()
 	ControlSend("LogMeIn", "Simply Connected","", "{ENTER}")
 	WinWaitActive("LogMeIn", "Account",3)
 	ControlSend("LogMeIn", "Account","","{ENTER}")
-	WinWaitActive("LogMeIn","License Agreement",3)
-	ControlSend("LogMeIn","License Agreement","","{ENTER}")
+	WinWaitActive("LogMeIn License Agreement","LogMeIn - Terms & Conditions of Use",3)
+	ControlSend("LogMeIn License Agreement","LogMeIn - Terms & Conditions of Use","","{ENTER}")
 	WinWaitActive("LogMeIn", "Software options",3)
 	ControlSend("LogMeIn", "Software options","","{TAB}")
 	ControlSend("LogMeIn", "Software options","","{TAB}")
@@ -740,22 +740,22 @@ EndFunc   ;==>LogMeIn
 Func NOD32()
 	Opt("WinTitleMatchMode", -2)
 	Run(@DesktopDir & "\C1SetupUtility\Files\Scripts\Batch\NOD32.bat", "","", @SW_HIDE)
-	WinWaitActive("ESET NOD32 Antivirus Setup", "Welcome",3)
+	WinWaitActive("ESET Endpoint Antivirus Setup", "Welcome to ESET Endpoint Antivirus",3)
 	Send("{ENTER}")
-	WinWaitActive("ESET NOD32 Antivirus Setup", "End-User",3)
+	WinWaitActive("ESET Endpoint Antivirus Setup", "End-User License Agreement",3)
 	Send("{TAB}")
 	Send("{TAB}")
 	Send("{UP}")
 	Send("{TAB}")
 	Send("{TAB}")
 	Send("{ENTER}")
-	WinWaitActive("ESET NOD32 Antivirus Setup", "Installation mode",3)
+	WinWaitActive("ESET Endpoint Antivirus Setup", "Installation mode",3)
 	Send("{ENTER}")
-	WinWaitActive("ESET NOD32 Antivirus Setup", "ESET Live Grid",3)
+	WinWaitActive("ESET Endpoint Antivirus Setup", "ESET Live Grid",3)
 	Send("{ENTER}")
-	WinWaitActive("ESET NOD32 Antivirus Setup", "Ready to Install",3)
+	WinWaitActive("ESET Endpoint Antivirus Setup", "Ready to Install",3)
 	Send("{ENTER}")
-	WinWaitActive("ESET NOD32 Antivirus Setup", "Completing",3)
+	WinWaitActive("ESET Endpoint Antivirus Setup", "Completing",3)
 	Send("{ENTER}")
 EndFunc   ;==>NOD32
 Func WG()
@@ -872,3 +872,17 @@ Func Xerox()
 	EndIf
 
 EndFunc   ;==>Xerox
+
+
+
+
+
+
+
+
+
+
+
+
+
+
