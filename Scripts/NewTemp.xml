@@ -35,7 +35,7 @@
     <Enabled>true</Enabled>
     <FileHippoId>7-zip_64</FileHippoId>
     
-    <TargetPath>C:\Users\%username%\Desktop\C1\Files\Ketarin\Programs\Other\</TargetPath>
+    <TargetPath>C:\Users\%username%\Desktop\C1SetupUtility\Files\Programs\Other\</TargetPath>
     <FixedDownloadUrl />
     <Name>7Zip</Name>
   </ApplicationJob>
@@ -74,7 +74,7 @@
     <Enabled>true</Enabled>
     <FileHippoId>adobe_reader</FileHippoId>
     
-    <TargetPath>C:\Users\%username%\Desktop\C1\Files\Ketarin\Programs\Players-Plugins\</TargetPath>
+    <TargetPath>C:\Users\%username%\Desktop\C1SetupUtility\Files\Programs\Players-Plugins\</TargetPath>
     <FixedDownloadUrl />
     <Name>Adobe Reader</Name>
   </ApplicationJob>
@@ -113,7 +113,7 @@
     <Enabled>true</Enabled>
     <FileHippoId>ccleaner</FileHippoId>
     
-    <TargetPath>C:\Users\%username%\Desktop\C1\Files\Ketarin\Programs\System Maint\</TargetPath>
+    <TargetPath>C:\Users\%username%\Desktop\C1SetupUtility\Files\Programs\System Maint\</TargetPath>
     <FixedDownloadUrl />
     <Name>CCleaner</Name>
   </ApplicationJob>
@@ -150,7 +150,7 @@
     <Enabled>true</Enabled>
     <FileHippoId>cutepdf_writer</FileHippoId>
     
-    <TargetPath>C:\Users\%username%\Desktop\C1\Files\Ketarin\Programs\Other\</TargetPath>
+    <TargetPath>C:\Users\%username%\Desktop\C1SetupUtility\Files\Programs\Other\</TargetPath>
     <FixedDownloadUrl />
     <Name>CutePDF</Name>
   </ApplicationJob>
@@ -189,7 +189,7 @@
     <Enabled>true</Enabled>
     <FileHippoId>defraggler</FileHippoId>
     
-    <TargetPath>C:\Users\%username%\Desktop\C1\Files\Ketarin\Programs\System Maint\</TargetPath>
+    <TargetPath>C:\Users\%username%\Desktop\C1SetupUtility\Files\Programs\System Maint\</TargetPath>
     <FixedDownloadUrl />
     <Name>Defraggler</Name>
   </ApplicationJob>
@@ -228,7 +228,7 @@
     <Enabled>true</Enabled>
     <FileHippoId>google_drive</FileHippoId>
     
-    <TargetPath>C:\Users\%username%\Desktop\C1\Files\Ketarin\Programs\Other</TargetPath>
+    <TargetPath>C:\Users\%username%\Desktop\C1SetupUtility\Files\Programs\Other</TargetPath>
     <FixedDownloadUrl />
     <Name>Google Drive</Name>
   </ApplicationJob>
@@ -267,7 +267,7 @@
     <Enabled>true</Enabled>
     <FileHippoId>jre_32</FileHippoId>
     
-    <TargetPath>C:\Users\%username%\Desktop\C1\Files\Ketarin\Programs\Players-Plugins\</TargetPath>
+    <TargetPath>C:\Users\%username%\Desktop\C1SetupUtility\Files\Programs\Players-Plugins\</TargetPath>
     <FixedDownloadUrl />
     <Name>Java 64bit</Name>
   </ApplicationJob>
@@ -306,7 +306,7 @@
     <Enabled>true</Enabled>
     <FileHippoId>malwarebytes_anti_malware</FileHippoId>
     
-    <TargetPath>C:\Users\%username%\Desktop\C1\Files\Ketarin\Programs\Anti-Malware\</TargetPath>
+    <TargetPath>C:\Users\%username%\Desktop\C1SetupUtility\Files\Programs\Anti-Malware\</TargetPath>
     <FixedDownloadUrl />
     <Name>Malwarebytes</Name>
   </ApplicationJob>
@@ -327,11 +327,7 @@
     <HttpReferer />
     <SetupInstructions>
       <SetupInstruction xsi:type="CustomSetupInstruction">
-        <Code>"C:\Users\%username%\Desktop\C1\Files\Ketarin\7za.exe" X "C:\Users\Win7\Desktop\C1\Files\Ketarin\Programs\Players-Plugins\QuickTimeInstaller.exe" -oC:\Users\%username%\Desktop\C1\Files\Software\QuickTimeInstaller
-msiexec.exe /I "C:\Users\%username%\Desktop\C1\Files\Software\QuickTimeInstaller\QuickTime.msi" /passive DESKTOP_SHORTCUTS=NO SCHEDULE_ASUW=0 ASUWINSTALLED=0
-msiexec.exe /I "C:\Users\%username%\Desktop\C1\Files\Software\QuickTimeInstaller\AppleSoftwareUpdate.msi" /qn
-msiexec.exe /I "C:\Users\%username%\Desktop\C1\Files\Software\QuickTimeInstaller\AppleApplicationSupport.msi" /qn
-schtasks /delete /tn "Apple\AppleSoftwareUpdate" /f</Code>
+        <Code>"C:\Users\%username%\Desktop\C1SetupUtility\Files\Scripts\Batch\QT.bat"</Code>
         <Type>Batch</Type>
       </SetupInstruction>
     </SetupInstructions>
@@ -347,7 +343,7 @@ schtasks /delete /tn "Apple\AppleSoftwareUpdate" /f</Code>
     <Enabled>true</Enabled>
     <FileHippoId>quicktime_player</FileHippoId>
     
-    <TargetPath>C:\Users\%username%\Desktop\C1\Files\Ketarin\Programs\Players-Plugins\</TargetPath>
+    <TargetPath>C:\Users\%username%\Desktop\C1SetupUtility\Files\Programs\Players-Plugins\</TargetPath>
     <FixedDownloadUrl />
     <Name>Quicktime</Name>
   </ApplicationJob>
@@ -386,7 +382,7 @@ schtasks /delete /tn "Apple\AppleSoftwareUpdate" /f</Code>
     <Enabled>true</Enabled>
     <FileHippoId>speccy</FileHippoId>
     
-    <TargetPath>C:\Users\%username%\Desktop\C1\Files\Ketarin\Programs\System Maint\</TargetPath>
+    <TargetPath>C:\Users\%username%\Desktop\C1SetupUtility\Files\Programs\System Maint\</TargetPath>
     <FixedDownloadUrl />
     <Name>Speccy</Name>
   </ApplicationJob>
@@ -425,7 +421,7 @@ schtasks /delete /tn "Apple\AppleSoftwareUpdate" /f</Code>
     <Enabled>true</Enabled>
     <FileHippoId>superantispyware</FileHippoId>
     
-    <TargetPath>C:\Users\%username%\Desktop\C1\Files\Ketarin\Programs\Anti-Malware\</TargetPath>
+    <TargetPath>C:\Users\%username%\Desktop\C1SetupUtility\Files\Programs\Anti-Malware\</TargetPath>
     <FixedDownloadUrl />
     <Name>SuperAntiSpyware</Name>
   </ApplicationJob>
