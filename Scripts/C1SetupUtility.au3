@@ -1,6 +1,6 @@
 #cs ----------------------------------------------------------------------------
 
-	AutoIt Version: 3.1
+	AutoIt Version: 3.2
 	Author: Mike Swatek
 
 	Script Function:
@@ -124,7 +124,7 @@ SplashOff()
 						Exit
 					Case $Gui1MenuHelp
 					Case $Gui1MenuAbout
-						MsgBox(64, "About", "C1 Setup Utility®" & @CRLF & "Version 3.0" & @CRLF & @CRLF & @CRLF & "Created by Mike Swatek" & @CRLF & "©2014 Composites One. All rights reserved.")
+						MsgBox(64, "About", "C1 Setup UtilityÂ®" & @CRLF & "Version 3.0" & @CRLF & @CRLF & @CRLF & "Created by Mike Swatek" & @CRLF & "Â©2014 Composites One. All rights reserved.")
 					Case $Gui1MenuInfo
 						ShellExecute(@DesktopDir & "\C1SetupUtility\Files\Scripts\HostTable.txt")
 					Case $hButton1
@@ -153,7 +153,7 @@ SplashOff()
 						GUICtrlSetState($hButton4, $GUI_ENABLE)
 					Case $Gui2MenuHelp
 					Case $Gui2MenuAbout
-						MsgBox(64, "About", "C1 Setup Utility®" & @CRLF & "Version 3.0" & @CRLF & @CRLF & @CRLF & "Created by Mike Swatek" & @CRLF & "©2014 Composites One. All rights reserved.")
+						MsgBox(64, "About", "C1 Setup UtilityÂ®" & @CRLF & "Version 3.0" & @CRLF & @CRLF & @CRLF & "Created by Mike Swatek" & @CRLF & "Â©2014 Composites One. All rights reserved.")
 					Case $Gui2MenuInfo
 						ShellExecute(@DesktopDir & "\C1SetupUtility\Files\Scripts\HostTable.txt")
 					Case $Gui2MenuAuto
@@ -202,7 +202,7 @@ SplashOff()
 						GUICtrlSetState($hButton12, $GUI_ENABLE)
 					Case $Gui3MenuHelp
 					Case $Gui3MenuAbout
-						MsgBox(64, "About", "C1 Setup Utility®" & @CRLF & "Version 3.0" & @CRLF & @CRLF & @CRLF & "Created by Mike Swatek" & @CRLF & "©2014 Composites One. All rights reserved.")
+						MsgBox(64, "About", "C1 Setup UtilityÂ®" & @CRLF & "Version 3.0" & @CRLF & @CRLF & @CRLF & "Created by Mike Swatek" & @CRLF & "Â©2014 Composites One. All rights reserved.")
 					Case $Gui3MenuInfo
 						ShellExecute(@DesktopDir & "\C1SetupUtility\Files\Scripts\HostTable.txt")
 					Case $hButton16
@@ -254,7 +254,7 @@ SplashOff()
 						GUICtrlSetState($hGUI3, $GUI_ENABLE)
 					Case $hGui6MenuHelp
 					Case $hGui6MenuAbout
-						MsgBox(64, "About", "C1 Setup Utility®" & @CRLF & "Version 3.0" & @CRLF & @CRLF & @CRLF & "Created by Mike Swatek" & @CRLF & "©2014 Composites One. All rights reserved.")
+						MsgBox(64, "About", "C1 Setup UtilityÂ®" & @CRLF & "Version 3.0" & @CRLF & @CRLF & @CRLF & "Created by Mike Swatek" & @CRLF & "Â©2014 Composites One. All rights reserved.")
 					Case $hGui6MenuHost
 						ShellExecute(@DesktopDir & "\C1SetupUtility\Files\Scripts\HostTable.txt")
 					Case $hButton28
@@ -274,7 +274,7 @@ SplashOff()
 						GUICtrlSetState($hGUI3, $GUI_ENABLE)
 					Case $hGui6MenuHelp
 					Case $hGui6MenuAbout
-						MsgBox(64, "About", "C1 Setup Utility®" & @CRLF & "Version 3.0" & @CRLF & @CRLF & @CRLF & "Created by Mike Swatek" & @CRLF & "©2014 Composites One. All rights reserved.")
+						MsgBox(64, "About", "C1 Setup UtilityÂ®" & @CRLF & "Version 3.0" & @CRLF & @CRLF & @CRLF & "Created by Mike Swatek" & @CRLF & "Â©2014 Composites One. All rights reserved.")
 					Case $hGui6MenuHost
 						ShellExecute(@DesktopDir & "\C1SetupUtility\Files\Scripts\HostTable.txt")
 					Case $hButton30
@@ -294,7 +294,7 @@ SplashOff()
 						GUICtrlSetState($hGUI3, $GUI_ENABLE)
 					Case $hGui6MenuHelp
 					Case $hGui6MenuAbout
-						MsgBox(64, "About", "C1 Setup Utility®" & @CRLF & "Version 3.0" & @CRLF & @CRLF & @CRLF & "Created by Mike Swatek" & @CRLF & "©2014 Composites One. All rights reserved.")
+						MsgBox(64, "About", "C1 Setup UtilityÂ®" & @CRLF & "Version 3.0" & @CRLF & @CRLF & @CRLF & "Created by Mike Swatek" & @CRLF & "Â©2014 Composites One. All rights reserved.")
 					Case $hGui6MenuHost
 						ShellExecute(@DesktopDir & "\C1SetupUtility\Files\Scripts\HostTable.txt")
 					Case $hButton32
@@ -314,7 +314,7 @@ SplashOff()
 						GUICtrlSetState($hGUI3, $GUI_ENABLE)
 					Case $hGui6MenuHelp
 					Case $hGui6MenuAbout
-						MsgBox(64, "About", "C1 Setup Utility®" & @CRLF & "Version 3.0" & @CRLF & @CRLF & @CRLF & "Created by Mike Swatek" & @CRLF & "©2014 Composites One. All rights reserved.")
+						MsgBox(64, "About", "C1 Setup UtilityÂ®" & @CRLF & "Version 3.0" & @CRLF & @CRLF & @CRLF & "Created by Mike Swatek" & @CRLF & "Â©2014 Composites One. All rights reserved.")
 					Case $hGui6MenuHost
 						ShellExecute(@DesktopDir & "\C1SetupUtility\Files\Scripts\HostTable.txt")
 					Case $hButton34
@@ -334,7 +334,7 @@ SplashOff()
 						GUICtrlSetState($hGUI3, $GUI_ENABLE)
 					Case $hGui6MenuHelp
 					Case $hGui6MenuAbout
-						MsgBox(64, "About", "C1 Setup Utility®" & @CRLF & "Version 3.0" & @CRLF & @CRLF & @CRLF & "Created by Mike Swatek" & @CRLF & "©2014 Composites One. All rights reserved.")
+						MsgBox(64, "About", "C1 Setup UtilityÂ®" & @CRLF & "Version 3.0" & @CRLF & @CRLF & @CRLF & "Created by Mike Swatek" & @CRLF & "Â©2014 Composites One. All rights reserved.")
 					Case $hGui6MenuHost
 						ShellExecute(@DesktopDir & "\C1SetupUtility\Files\Scripts\HostTable.txt")
 					Case $hButton36
