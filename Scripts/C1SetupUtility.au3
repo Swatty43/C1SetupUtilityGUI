@@ -134,6 +134,7 @@ SplashOff()
 					Case $hButton3
 						RunAs("Administrator", "", "franklin", "", @DesktopDir & "\C1SetupUtility\Files\Programs\Software\Norton_Removal_Tool.exe")
 					Case $hButton4
+						GUISetState(@SW_DISABLE,$hGUI1)
 						GUICtrlSetState($hButton4, $GUI_DISABLE)
 						gui2()
 					Case $hButton5
@@ -147,10 +148,14 @@ SplashOff()
 					Case $GUI_EVENT_CLOSE ; If we get the CLOSE message from this GUI - we just delete the GUI <<<<<<<<<<<<<<<
 						GUIDelete($hGUI2)
 						GUICtrlSetState($hButton4, $GUI_ENABLE)
+						GUISetState(@SW_ENABLE,$hGUI1)
+						WinActivate("C1 Setup Utility","Welcome to the C1 Setup Utility")
 					Case $Gui2MenuFile
 					Case $Gui2FileExit
 						GUIDelete($hGUI2)
+						GUISetState(@SW_ENABLE,$hGUI1)
 						GUICtrlSetState($hButton4, $GUI_ENABLE)
+						WinActivate("C1 Setup Utility","Welcome to the C1 Setup Utility")
 					Case $Gui2MenuHelp
 					Case $Gui2MenuAbout
 						MsgBox(64, "About", "C1 Setup Utility®" & @CRLF & "Version 3.0" & @CRLF & @CRLF & @CRLF & "Created by Mike Swatek" & @CRLF & "©2014 Composites One. All rights reserved.")
@@ -183,10 +188,15 @@ SplashOff()
 						GUICtrlSetState($hGUI2, $GUI_ENABLE)
 					Case $hButton12
 						GUICtrlSetState($hButton12, $GUI_DISABLE)
+						GUISetState(@SW_DISABLE,$hGUI2)
 						gui3()
 					Case $hButton13
+						GUICtrlSetState($hButton13, $GUI_DISABLE)
+						GUISetState(@SW_DISABLE,$hGUI2)
 						gui5()
 					Case $hButton14
+						GUICtrlSetState($hButton14, $GUI_DISABLE)
+						GUISetState(@SW_DISABLE,$hGUI2)
 						gui4()
 					Case $hButton15
 						ShellExecute(@DesktopDir & "\C1SetupUtility\Files\Scripts\Batch\wu.bat", "", @SW_SHOW)
@@ -196,24 +206,33 @@ SplashOff()
 					Case $GUI_EVENT_CLOSE ; If we get the CLOSE message from this GUI - we just delete the GUI <<<<<<<<<<<<<<<
 						GUIDelete($hGUI3)
 						GUICtrlSetState($hButton12, $GUI_ENABLE)
+						GUISetState(@SW_ENABLE,$hGUI2)
+						WinActivate("C1 Installer","Welcome to the C1 Installer")
 					Case $Gui3MenuFile
 					Case $Gui3FileExit
 						GUIDelete($hGUI3)
 						GUICtrlSetState($hButton12, $GUI_ENABLE)
+						GUISetState(@SW_Enable,$hGUI2)
+						WinActivate("C1 Installer","Welcome to the C1 Installer")
 					Case $Gui3MenuHelp
 					Case $Gui3MenuAbout
 						MsgBox(64, "About", "C1 Setup Utility®" & @CRLF & "Version 3.0" & @CRLF & @CRLF & @CRLF & "Created by Mike Swatek" & @CRLF & "©2014 Composites One. All rights reserved.")
 					Case $Gui3MenuInfo
 						ShellExecute(@DesktopDir & "\C1SetupUtility\Files\Scripts\HostTable.txt")
 					Case $hButton16
+						GUISetState(@SW_DISABLE,$hGUI3)
 						gui6()
 					Case $hButton17
+						GUISetState(@SW_DISABLE,$hGUI3)
 						gui7()
 					Case $hButton18
+						GUISetState(@SW_DISABLE,$hGUI3)
 						gui8()
 					Case $hButton19
+						GUISetState(@SW_DISABLE,$hGUI3)
 						gui9()
 					Case $hButton20
+						GUISetState(@SW_DISABLE,$hGUI3)
 						gui10()
 					Case $hButton21
 						ShellExecute("C:\Users\%username%\Desktop\C1SetupUtility\Files\Scripts\Printers\PrintStop.cmd")
@@ -228,6 +247,9 @@ SplashOff()
 					Case $GUI_EVENT_CLOSE ; If we get the CLOSE message from this GUI - we just delete the GUI <<<<<<<<<<<<<<<
 						GUIDelete($hGUI4)
 						GUICtrlSetState($hGUI2, $GUI_ENABLE)
+						GUISetState(@SW_Enable,$hGUI2)
+						GUICtrlSetState($hButton14, $GUI_ENABLE)
+						WinActivate("C1 Installer","Welcome to the C1 Installer")
 					Case $hButton24
 						ShellExecute(@DesktopDir & "\C1SetupUtility\Files\Scripts\Batch\Laptop.bat", "", @SW_SHOW)
 					Case $hButton25
@@ -238,6 +260,9 @@ SplashOff()
 					Case $GUI_EVENT_CLOSE ; If we get the CLOSE message from this GUI - we just delete the GUI <<<<<<<<<<<<<<<
 						GUIDelete($hGUI5)
 						GUICtrlSetState($hGUI2, $GUI_ENABLE)
+						GUISetState(@SW_Enable,$hGUI2)
+						GUICtrlSetState($hButton13, $GUI_ENABLE)
+						WinActivate("C1 Installer","Welcome to the C1 Installer")
 					Case $hButton26
 						ShellExecute(@DesktopDir & "\C1SetupUtility\Files\Scripts\Batch\US.bat", "", @SW_SHOW)
 					Case $hButton27
@@ -248,10 +273,14 @@ SplashOff()
 					Case $GUI_EVENT_CLOSE ; If we get the CLOSE message from this GUI - we just delete the GUI <<<<<<<<<<<<<<<
 						GUIDelete($hGUI6)
 						GUICtrlSetState($hGUI3, $GUI_ENABLE)
+						GUISetState(@SW_ENABLE,$hGUI3)
+						WinActivate("C1 Printer Installer","Welcome to the C1 Printer")
 					Case $hGui6FileMenu
 					Case $hGui6FileExit
 						GUIDelete($hGUI6)
 						GUICtrlSetState($hGUI3, $GUI_ENABLE)
+						GUISetState(@SW_ENABLE,$hGUI3)
+						WinActivate("C1 Printer Installer","Welcome to the C1 Printer")
 					Case $hGui6MenuHelp
 					Case $hGui6MenuAbout
 						MsgBox(64, "About", "C1 Setup Utility®" & @CRLF & "Version 3.0" & @CRLF & @CRLF & @CRLF & "Created by Mike Swatek" & @CRLF & "©2014 Composites One. All rights reserved.")
@@ -268,10 +297,14 @@ SplashOff()
 					Case $GUI_EVENT_CLOSE ; If we get the CLOSE message from this GUI - we just delete the GUI <<<<<<<<<<<<<<<
 						GUIDelete($hGUI7)
 						GUICtrlSetState($hGUI3, $GUI_ENABLE)
+						GUISetState(@SW_ENABLE,$hGUI3)
+						WinActivate("C1 Printer Installer","Welcome to the C1 Printer")
 					Case $hGui6FileMenu
 					Case $hGui6FileExit
 						GUIDelete($hGUI7)
+						GUISetState(@SW_ENABLE,$hGUI3)
 						GUICtrlSetState($hGUI3, $GUI_ENABLE)
+						WinActivate("C1 Printer Installer","Welcome to the C1 Printer")
 					Case $hGui6MenuHelp
 					Case $hGui6MenuAbout
 						MsgBox(64, "About", "C1 Setup Utility®" & @CRLF & "Version 3.0" & @CRLF & @CRLF & @CRLF & "Created by Mike Swatek" & @CRLF & "©2014 Composites One. All rights reserved.")
@@ -288,10 +321,14 @@ SplashOff()
 					Case $GUI_EVENT_CLOSE ; If we get the CLOSE message from this GUI - we just delete the GUI <<<<<<<<<<<<<<<
 						GUIDelete($hGUI8)
 						GUICtrlSetState($hGUI3, $GUI_ENABLE)
+						GUISetState(@SW_ENABLE,$hGUI3)
+						WinActivate("C1 Printer Installer","Welcome to the C1 Printer")
 					Case $hGui6FileMenu
 					Case $hGui6FileExit
 						GUIDelete($hGUI8)
 						GUICtrlSetState($hGUI3, $GUI_ENABLE)
+						GUISetState(@SW_ENABLE,$hGUI3)
+						WinActivate("C1 Printer Installer","Welcome to the C1 Printer")
 					Case $hGui6MenuHelp
 					Case $hGui6MenuAbout
 						MsgBox(64, "About", "C1 Setup Utility®" & @CRLF & "Version 3.0" & @CRLF & @CRLF & @CRLF & "Created by Mike Swatek" & @CRLF & "©2014 Composites One. All rights reserved.")
@@ -308,10 +345,14 @@ SplashOff()
 					Case $GUI_EVENT_CLOSE ; If we get the CLOSE message from this GUI - we just delete the GUI <<<<<<<<<<<<<<<
 						GUIDelete($hGUI9)
 						GUICtrlSetState($hGUI3, $GUI_ENABLE)
+						GUISetState(@SW_ENABLE,$hGUI3)
+						WinActivate("C1 Printer Installer","Welcome to the C1 Printer")
 					Case $hGui6FileMenu
 					Case $hGui6FileExit
 						GUIDelete($hGUI9)
 						GUICtrlSetState($hGUI3, $GUI_ENABLE)
+						GUISetState(@SW_ENABLE,$hGUI3)
+						WinActivate("C1 Printer Installer","Welcome to the C1 Printer")
 					Case $hGui6MenuHelp
 					Case $hGui6MenuAbout
 						MsgBox(64, "About", "C1 Setup Utility®" & @CRLF & "Version 3.0" & @CRLF & @CRLF & @CRLF & "Created by Mike Swatek" & @CRLF & "©2014 Composites One. All rights reserved.")
@@ -328,10 +369,14 @@ SplashOff()
 					Case $GUI_EVENT_CLOSE ; If we get the CLOSE message from this GUI - we just delete the GUI <<<<<<<<<<<<<<<
 						GUIDelete($hGUI10)
 						GUICtrlSetState($hGUI3, $GUI_ENABLE)
+						GUISetState(@SW_ENABLE,$hGUI3)
+						WinActivate("C1 Printer Installer","Welcome to the C1 Printer")
 					Case $hGui6FileMenu
 					Case $hGui6FileExit
 						GUIDelete($hGUI10)
 						GUICtrlSetState($hGUI3, $GUI_ENABLE)
+						GUISetState(@SW_ENABLE,$hGUI3)
+						WinActivate("C1 Printer Installer","Welcome to the C1 Printer")
 					Case $hGui6MenuHelp
 					Case $hGui6MenuAbout
 						MsgBox(64, "About", "C1 Setup Utility®" & @CRLF & "Version 3.0" & @CRLF & @CRLF & @CRLF & "Created by Mike Swatek" & @CRLF & "©2014 Composites One. All rights reserved.")
