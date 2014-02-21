@@ -556,7 +556,7 @@ func Printers()
 	Opt("ExpandEnvStrings", 1)
 	$MyBox6 = MsgBox(35, "Data Check", "Did you enter the information correctly?")
 	If $MyBox6 == 6 Then
-		ShellExecute("C:\Users\mswatek\Desktop\AutoIT\Old\NewPrinters.cmd",'"' & GUICtrlRead($MFG) & '" "' & GUICtrlRead($PrinterName) & '" "' & GUICtrlRead($PrinterIP) & '"')
+		ShellExecute("C:\Users\%username%\Desktop\C1SetupUtility\Files\Scripts\Printers\Printers.cmd",'"' & GUICtrlRead($MFG) & '" "' & GUICtrlRead($PrinterName) & '" "' & GUICtrlRead($PrinterIP) & '"')
 		WinWaitActive("Printer Installer")
 		Send(GUICtrlRead($MFG))
 		Send("{ENTER 1}")
@@ -570,16 +570,3 @@ func Printers()
 		WinActivate("C1 Printer Installer","Welcome to the C1 Printer")
 	EndIf
 EndFunc
-
-
-
-
-
-
-
-
-
-
-
-
-
