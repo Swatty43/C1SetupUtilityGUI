@@ -1,6 +1,6 @@
 #cs ----------------------------------------------------------------------------
 
-	AutoIt Version: 3.2
+	AutoIt Version: 3.3
 	Author: Mike Swatek
 
 	Script Function:
@@ -220,26 +220,13 @@ SplashOff()
 					Case $Gui3MenuInfo
 						ShellExecute(@DesktopDir & "\C1SetupUtility\Files\Scripts\HostTable.txt")
 					Case $hButton16
-						GUISetState(@SW_DISABLE,$hGUI3)
-						gui6()
+						 printers()
 					Case $hButton17
-						GUISetState(@SW_DISABLE,$hGUI3)
-						gui7()
-					Case $hButton18
-						GUISetState(@SW_DISABLE,$hGUI3)
-						gui8()
-					Case $hButton19
-						GUISetState(@SW_DISABLE,$hGUI3)
-						gui9()
-					Case $hButton20
-						GUISetState(@SW_DISABLE,$hGUI3)
-						gui10()
-					Case $hButton21
 						ShellExecute("C:\Users\%username%\Desktop\C1SetupUtility\Files\Scripts\Printers\PrintStop.cmd")
-					Case $hButton22
+					Case $hButton18
 						ShellExecuteWait(@DesktopDir & "\C1SetupUtility\Files\Programs\Other\1.bat", "", @SW_SHOW)
 						ShellExecute("C:\Users\%username%\Desktop\C1SetupUtility\Files\Programs\Other\Full.cmd")
-					Case $hButton23
+					Case $hButton19
 						ShellExecute("C:\Users\%username%\Desktop\C1SetupUtility\Files\Scripts\Printers\PrintStart.cmd")
 				EndSwitch
 			Case $hGUI4
@@ -250,9 +237,9 @@ SplashOff()
 						GUISetState(@SW_Enable,$hGUI2)
 						GUICtrlSetState($hButton14, $GUI_ENABLE)
 						WinActivate("C1 Installer","Welcome to the C1 Installer")
-					Case $hButton24
+					Case $hButton20
 						ShellExecute(@DesktopDir & "\C1SetupUtility\Files\Scripts\Batch\Laptop.bat", "", @SW_SHOW)
-					Case $hButton25
+					Case $hButton21
 						ShellExecute(@DesktopDir & "\C1SetupUtility\Files\Scripts\Batch\Desktop.bat", "", @SW_SHOW)
 				EndSwitch
 			Case $hGUI5
@@ -263,130 +250,10 @@ SplashOff()
 						GUISetState(@SW_Enable,$hGUI2)
 						GUICtrlSetState($hButton13, $GUI_ENABLE)
 						WinActivate("C1 Installer","Welcome to the C1 Installer")
-					Case $hButton26
+					Case $hButton22
 						ShellExecute(@DesktopDir & "\C1SetupUtility\Files\Scripts\Batch\US.bat", "", @SW_SHOW)
-					Case $hButton27
+					Case $hButton23
 						ShellExecute(@DesktopDir & "\C1SetupUtility\Files\Scripts\Batch\CA.bat", "", @SW_SHOW)
-				EndSwitch
-			Case $hGUI6
-				Switch $aMsg[0] ; Now check for the messages for $hGUI6
-					Case $GUI_EVENT_CLOSE ; If we get the CLOSE message from this GUI - we just delete the GUI <<<<<<<<<<<<<<<
-						GUIDelete($hGUI6)
-						GUICtrlSetState($hGUI3, $GUI_ENABLE)
-						GUISetState(@SW_ENABLE,$hGUI3)
-						WinActivate("C1 Printer Installer","Welcome to the C1 Printer")
-					Case $hGui6FileMenu
-					Case $hGui6FileExit
-						GUIDelete($hGUI6)
-						GUICtrlSetState($hGUI3, $GUI_ENABLE)
-						GUISetState(@SW_ENABLE,$hGUI3)
-						WinActivate("C1 Printer Installer","Welcome to the C1 Printer")
-					Case $hGui6MenuHelp
-					Case $hGui6MenuAbout
-						MsgBox(64, "About", "C1 Setup Utility®" & @CRLF & "Version 3.0" & @CRLF & @CRLF & @CRLF & "Created by Mike Swatek" & @CRLF & "©2014 Composites One. All rights reserved.")
-					Case $hGui6MenuHost
-						ShellExecute(@DesktopDir & "\C1SetupUtility\Files\Scripts\HostTable.txt")
-					Case $hButton28
-						HP()
-					Case $hButton29
-						GUIDelete($hGUI6)
-						GUICtrlSetState($hGUI3, $GUI_ENABLE)
-				EndSwitch
-			Case $hGUI7
-				Switch $aMsg[0] ; Now check for the messages for $hGUI7
-					Case $GUI_EVENT_CLOSE ; If we get the CLOSE message from this GUI - we just delete the GUI <<<<<<<<<<<<<<<
-						GUIDelete($hGUI7)
-						GUICtrlSetState($hGUI3, $GUI_ENABLE)
-						GUISetState(@SW_ENABLE,$hGUI3)
-						WinActivate("C1 Printer Installer","Welcome to the C1 Printer")
-					Case $hGui6FileMenu
-					Case $hGui6FileExit
-						GUIDelete($hGUI7)
-						GUISetState(@SW_ENABLE,$hGUI3)
-						GUICtrlSetState($hGUI3, $GUI_ENABLE)
-						WinActivate("C1 Printer Installer","Welcome to the C1 Printer")
-					Case $hGui6MenuHelp
-					Case $hGui6MenuAbout
-						MsgBox(64, "About", "C1 Setup Utility®" & @CRLF & "Version 3.0" & @CRLF & @CRLF & @CRLF & "Created by Mike Swatek" & @CRLF & "©2014 Composites One. All rights reserved.")
-					Case $hGui6MenuHost
-						ShellExecute(@DesktopDir & "\C1SetupUtility\Files\Scripts\HostTable.txt")
-					Case $hButton30
-						Canon()
-					Case $hButton31
-						GUIDelete($hGUI7)
-						GUICtrlSetState($hGUI3, $GUI_ENABLE)
-				EndSwitch
-			Case $hGUI8
-				Switch $aMsg[0] ; Now check for the messages for $hGUI8
-					Case $GUI_EVENT_CLOSE ; If we get the CLOSE message from this GUI - we just delete the GUI <<<<<<<<<<<<<<<
-						GUIDelete($hGUI8)
-						GUICtrlSetState($hGUI3, $GUI_ENABLE)
-						GUISetState(@SW_ENABLE,$hGUI3)
-						WinActivate("C1 Printer Installer","Welcome to the C1 Printer")
-					Case $hGui6FileMenu
-					Case $hGui6FileExit
-						GUIDelete($hGUI8)
-						GUICtrlSetState($hGUI3, $GUI_ENABLE)
-						GUISetState(@SW_ENABLE,$hGUI3)
-						WinActivate("C1 Printer Installer","Welcome to the C1 Printer")
-					Case $hGui6MenuHelp
-					Case $hGui6MenuAbout
-						MsgBox(64, "About", "C1 Setup Utility®" & @CRLF & "Version 3.0" & @CRLF & @CRLF & @CRLF & "Created by Mike Swatek" & @CRLF & "©2014 Composites One. All rights reserved.")
-					Case $hGui6MenuHost
-						ShellExecute(@DesktopDir & "\C1SetupUtility\Files\Scripts\HostTable.txt")
-					Case $hButton32
-						Ricoh()
-					Case $hButton33
-						GUIDelete($hGUI8)
-						GUICtrlSetState($hGUI3, $GUI_ENABLE)
-				EndSwitch
-			Case $hGUI9
-				Switch $aMsg[0] ; Now check for the messages for $hGUI9
-					Case $GUI_EVENT_CLOSE ; If we get the CLOSE message from this GUI - we just delete the GUI <<<<<<<<<<<<<<<
-						GUIDelete($hGUI9)
-						GUICtrlSetState($hGUI3, $GUI_ENABLE)
-						GUISetState(@SW_ENABLE,$hGUI3)
-						WinActivate("C1 Printer Installer","Welcome to the C1 Printer")
-					Case $hGui6FileMenu
-					Case $hGui6FileExit
-						GUIDelete($hGUI9)
-						GUICtrlSetState($hGUI3, $GUI_ENABLE)
-						GUISetState(@SW_ENABLE,$hGUI3)
-						WinActivate("C1 Printer Installer","Welcome to the C1 Printer")
-					Case $hGui6MenuHelp
-					Case $hGui6MenuAbout
-						MsgBox(64, "About", "C1 Setup Utility®" & @CRLF & "Version 3.0" & @CRLF & @CRLF & @CRLF & "Created by Mike Swatek" & @CRLF & "©2014 Composites One. All rights reserved.")
-					Case $hGui6MenuHost
-						ShellExecute(@DesktopDir & "\C1SetupUtility\Files\Scripts\HostTable.txt")
-					Case $hButton34
-						Sharp()
-					Case $hButton35
-						GUIDelete($hGUI9)
-						GUICtrlSetState($hGUI3, $GUI_ENABLE)
-				EndSwitch
-			Case $hGUI10
-				Switch $aMsg[0] ; Now check for the messages for $hGUI10
-					Case $GUI_EVENT_CLOSE ; If we get the CLOSE message from this GUI - we just delete the GUI <<<<<<<<<<<<<<<
-						GUIDelete($hGUI10)
-						GUICtrlSetState($hGUI3, $GUI_ENABLE)
-						GUISetState(@SW_ENABLE,$hGUI3)
-						WinActivate("C1 Printer Installer","Welcome to the C1 Printer")
-					Case $hGui6FileMenu
-					Case $hGui6FileExit
-						GUIDelete($hGUI10)
-						GUICtrlSetState($hGUI3, $GUI_ENABLE)
-						GUISetState(@SW_ENABLE,$hGUI3)
-						WinActivate("C1 Printer Installer","Welcome to the C1 Printer")
-					Case $hGui6MenuHelp
-					Case $hGui6MenuAbout
-						MsgBox(64, "About", "C1 Setup Utility®" & @CRLF & "Version 3.0" & @CRLF & @CRLF & @CRLF & "Created by Mike Swatek" & @CRLF & "©2014 Composites One. All rights reserved.")
-					Case $hGui6MenuHost
-						ShellExecute(@DesktopDir & "\C1SetupUtility\Files\Scripts\HostTable.txt")
-					Case $hButton36
-						Xerox()
-					Case $hButton37
-						GUIDelete($hGUI10)
-						GUICtrlSetState($hGUI3, $GUI_ENABLE)
 				EndSwitch
 		EndSwitch
 	WEnd
@@ -493,88 +360,76 @@ Func gui2() ;C1 Installer
 	GUISetState()
 EndFunc   ;==>gui2
 Func gui3() ;C1 Printer Installer
-	Opt("ExpandEnvStrings", 1)
-	$hGUI3 = GUICreate("C1 Printer Installer", 772, 399, 297, 178)
-	GUISetOnEvent($GUI_EVENT_CLOSE, "On_Close") ; Call a common GUI close function
-	GUICtrlSetOnEvent(-1, "On_Button") ; Call a common button function
-	$Gui3MenuFile = GUICtrlCreateMenu("&File")
-	GUICtrlSetOnEvent(-1, "On_Button") ; Call a common button function
-	$Gui3FileExit = GUICtrlCreateMenuItem("Exit", $Gui3MenuFile)
-	GUICtrlSetOnEvent(-1, "On_Button") ; Call a common button function
-	$Gui3MenuHelp = GUICtrlCreateMenu("&Help")
-	GUICtrlSetOnEvent(-1, "On_Button") ; Call a common button function
-	$Gui3MenuAbout = GUICtrlCreateMenuItem("About", $Gui3MenuHelp)
-	GUICtrlSetOnEvent(-1, "On_Button") ; Call a common button function
-	$Gui3MenuInfo = GUICtrlCreateMenuItem("Info", $Gui3MenuHelp)
-	GUICtrlSetOnEvent(-1, "On_Button") ; Call a common button function
-	$Pic1 = GUICtrlCreatePic("C:\Users\%username%\Desktop\C1SetupUtility\Files\Tools\BG.jpg", 0, 0, 769, 377)
-	$Pic2 = GUICtrlCreatePic("C:\Users\%username%\Desktop\C1SetupUtility\Files\Tools\Composite-One-300x280Grey.gif", 24, 88, 233, 193)
-	GUICtrlSetState($Pic1, $GUI_DISABLE)
-	GUISetFont(12, 800, 0, "Terminal")
-	$Label1 = GUICtrlCreateLabel("Welcome to the C1 Printer Installer", 160, 16, 459, 20)
-	GUICtrlSetColor(-1, 0x0000FF)
-	GUICtrlSetBkColor(-1, 0xC0C0C0)
-	$Label2 = GUICtrlCreateLabel("This program will allow you to install network printers", 224, 32, 356, 21)
-	GUICtrlSetFont(-1, 11, 800, 0, "Times New Roman")
-	GUICtrlSetColor(-1, 0x0000FF)
-	GUICtrlSetBkColor(-1, 0xC0C0C0)
-	$Label3 = GUICtrlCreateLabel("1.", 333, 112, 19, 26)
-	GUICtrlSetFont(-1, 14, 800, 0, "Times New Roman")
-	GUICtrlSetColor(-1, 0x0000FF)
-	GUICtrlSetBkColor(-1, 0xC0C0C0)
-	$hButton16 = GUICtrlCreateButton("HP", 357, 112, 123, 25)
-	GUICtrlSetOnEvent(-1, "On_Button") ; Call a common button function
-	GUICtrlSetFont(-1, 10, 800, 0, "Times New Roman")
-	$Label4 = GUICtrlCreateLabel("2.", 520, 112, 19, 26)
-	GUICtrlSetFont(-1, 14, 800, 0, "Times New Roman")
-	GUICtrlSetColor(-1, 0x0000FF)
-	GUICtrlSetBkColor(-1, 0xC0C0C0)
-	$hButton17 = GUICtrlCreateButton("Canon", 541, 113, 123, 25)
-	GUICtrlSetOnEvent(-1, "On_Button") ; Call a common button function
-	GUICtrlSetFont(-1, 10, 800, 0, "Times New Roman")
-	$Label5 = GUICtrlCreateLabel("3.", 333, 147, 19, 26)
-	GUICtrlSetFont(-1, 14, 800, 0, "Times New Roman")
-	GUICtrlSetColor(-1, 0x0000FF)
-	GUICtrlSetBkColor(-1, 0xC0C0C0)
-	$hButton18 = GUICtrlCreateButton("Ricoh", 357, 146, 123, 25)
-	GUICtrlSetOnEvent(-1, "On_Button") ; Call a common button function
-	GUICtrlSetFont(-1, 10, 800, 0, "Times New Roman")
-	$Label6 = GUICtrlCreateLabel("4.", 520, 147, 19, 26)
-	GUICtrlSetColor(-1, 0x0000FF)
-	GUICtrlSetBkColor(-1, 0xC0C0C0)
-	GUICtrlSetFont(-1, 14, 800, 0, "Times New Roman")
-	$hButton19 = GUICtrlCreateButton("Sharp", 541, 147, 123, 25)
-	GUICtrlSetOnEvent(-1, "On_Button") ; Call a common button function
-	GUICtrlSetFont(-1, 10, 800, 0, "Times New Roman")
-	$Label7 = GUICtrlCreateLabel("5.", 333, 180, 19, 26)
-	GUICtrlSetColor(-1, 0x0000FF)
-	GUICtrlSetBkColor(-1, 0xC0C0C0)
-	GUICtrlSetFont(-1, 14, 800, 0, "Times New Roman")
-	$hButton20 = GUICtrlCreateButton("Xerox", 357, 179, 123, 25)
-	GUICtrlSetOnEvent(-1, "On_Button") ; Call a common button function
-	GUICtrlSetFont(-1, 10, 800, 0, "Times New Roman")
-	$Label8 = GUICtrlCreateLabel("6.", 520, 181, 19, 26)
-	GUICtrlSetColor(-1, 0x0000FF)
-	GUICtrlSetBkColor(-1, 0xC0C0C0)
-	GUICtrlSetFont(-1, 14, 800, 0, "Times New Roman")
-	$hButton21 = GUICtrlCreateButton("Kill PrnSpl", 541, 180, 123, 25)
-	GUICtrlSetOnEvent(-1, "On_Button") ; Call a common button function
-	GUICtrlSetFont(-1, 10, 800, 0, "Times New Roman")
-	$hButton22 = GUICtrlCreateButton("", 357, 210, 123, 25)
-	GUICtrlSetOnEvent(-1, "On_Button") ; Call a common button function
-	GUICtrlSetFont(-1, 10, 800, 0, "Times New Roman")
-	$Label9 = GUICtrlCreateLabel("7.", 333, 210, 19, 26)
-	GUICtrlSetColor(-1, 0x0000FF)
-	GUICtrlSetBkColor(-1, 0xC0C0C0)
-	GUICtrlSetFont(-1, 14, 800, 0, "Times New Roman")
-	$Label10 = GUICtrlCreateLabel("8.", 520, 210, 19, 26)
-	GUICtrlSetColor(-1, 0x0000FF)
-	GUICtrlSetBkColor(-1, 0xC0C0C0)
-	GUICtrlSetFont(-1, 14, 800, 0, "Times New Roman")
-	$hButton23 = GUICtrlCreateButton("Start PrnSpl", 541, 211, 123, 25)
-	GUICtrlSetOnEvent(-1, "On_Button") ; Call a common button function
-	GUICtrlSetFont(-1, 10, 800, 0, "Times New Roman")
-	GUISetState()
+Opt("ExpandEnvStrings", 1)
+Opt("WinTitleMatchMode", 2)
+$hGUI3 = GUICreate("C1 Printer Installer", 772, 399, 297, 178)
+GUISetOnEvent($GUI_EVENT_CLOSE, "On_Close") ; Call a common GUI close function
+GUICtrlSetOnEvent(-1, "On_Button") ; Call a common button function
+$Gui3MenuFile = GUICtrlCreateMenu("&File")
+GUICtrlSetOnEvent(-1, "On_Button") ; Call a common button function
+$Gui3FileExit = GUICtrlCreateMenuItem("Exit", $Gui3MenuFile)
+GUICtrlSetOnEvent(-1, "On_Button") ; Call a common button function
+$Gui3MenuHelp = GUICtrlCreateMenu("&Help")
+GUICtrlSetOnEvent(-1, "On_Button") ; Call a common button function
+$Gui3MenuAbout = GUICtrlCreateMenuItem("About", $Gui3MenuHelp)
+GUICtrlSetOnEvent(-1, "On_Button") ; Call a common button function
+$Gui3MenuInfo = GUICtrlCreateMenuItem("Host Table", $Gui3MenuHelp)
+GUICtrlSetOnEvent(-1, "On_Button") ; Call a common button function
+$Pic1 = GUICtrlCreatePic("C:\Users\%username%\Desktop\C1SetupUtility\Files\Tools\BG.jpg", 0, 0, 769, 377)
+$Pic2 = GUICtrlCreatePic("C:\Users\%username%\Desktop\C1SetupUtility\Files\Tools\Composite-One-300x280Grey.gif", 24, 88, 233, 193)
+GUICtrlSetState($Pic1, $GUI_DISABLE)
+GUISetFont(12, 800, 0, "Terminal")
+$Label1 = GUICtrlCreateLabel("Welcome to the C1 Printer Installer", 160, 16, 459, 20)
+GUICtrlSetColor(-1, 0x0000FF)
+GUICtrlSetBkColor(-1, 0xC0C0C0)
+$Label2 = GUICtrlCreateLabel("This program will allow you to install network printers", 224, 32, 356, 21)
+GUICtrlSetColor(-1, 0x0000FF)
+GUICtrlSetBkColor(-1, 0xC0C0C0)
+GUICtrlSetFont(-1, 11, 800, 0, "Times New Roman")
+$MFG = GUICtrlCreateCombo("", 530, 88, 123, 25)
+GUICtrlSetData(-1, "Canon|HP|Ricoh|Sharp|Xerox","HP") ; default HP
+GUICtrlSetFont(-1, 10, 400, 0, "Times New Roman")
+$Label3 = GUICtrlCreateLabel("Select Manufacturer:", 357, 88, 170, 26)
+GUICtrlSetColor(-1, 0x000000)
+GUICtrlSetBkColor(-1, 0xC0C0C0)
+GUICtrlSetFont(-1, 14, 800, 0, "Times New Roman")
+$PrinterName = GUICtrlCreateInput("", 510, 129, 143, 24)
+GUICtrlSetFont(-1, 12, 400, 0, "Times New Roman")
+$Label4 = GUICtrlCreateLabel("Printer Name:", 357, 129, 123, 19)
+GUICtrlSetFont(-1, 14, 800, 0, "Times New Roman")
+GUICtrlSetColor(-1, 0x000000)
+GUICtrlSetBkColor(-1, 0xC0C0C0)
+$PrinterIP = GUICtrlCreateInput("", 510, 170, 143, 24)
+GUICtrlSetFont(-1, 12, 400, 0, "Times New Roman")
+$Label5 = GUICtrlCreateLabel("Printer IP:", 357, 170, 123, 19)
+GUICtrlSetFont(-1, 14, 800, 0, "Times New Roman")
+GUICtrlSetColor(-1, 0x000000)
+GUICtrlSetBkColor(-1, 0xC0C0C0)
+$hButton16 = GUICtrlCreateButton("Install",528,216,123, 25)
+GUICtrlSetOnEvent(-1, "On_Button") ; Call a common button function
+GUICtrlSetFont(-1, 10, 800, 0, "Times New Roman")
+$Label6 = GUICtrlCreateLabel("3.", 508, 284, 19, 26)
+GUICtrlSetColor(-1, 0x0000FF)
+GUICtrlSetBkColor(-1, 0xC0C0C0)
+GUICtrlSetFont(-1, 14, 800, 0, "Times New Roman")
+$hButton17 = GUICtrlCreateButton("Kill PrnSpl", 530, 284, 123, 25)
+GUICtrlSetOnEvent(-1, "On_Button") ; Call a common button function
+GUICtrlSetFont(-1, 10, 800, 0, "Times New Roman")
+$hButton18 = GUICtrlCreateButton("", 357, 320, 123, 25)
+GUICtrlSetOnEvent(-1, "On_Button") ; Call a common button function
+GUICtrlSetFont(-1, 10, 800, 0, "Times New Roman")
+$Label7 = GUICtrlCreateLabel("3.", 333, 320, 19, 26)
+GUICtrlSetColor(-1, 0x0000FF)
+GUICtrlSetBkColor(-1, 0xC0C0C0)
+GUICtrlSetFont(-1, 14, 800, 0, "Times New Roman")
+$Label8 = GUICtrlCreateLabel("1.", 333, 284, 19, 26)
+GUICtrlSetColor(-1, 0x0000FF)
+GUICtrlSetBkColor(-1, 0xC0C0C0)
+GUICtrlSetFont(-1, 14, 800, 0, "Times New Roman")
+$hButton19 = GUICtrlCreateButton("Start PrnSpl", 357, 284, 123, 25)
+GUICtrlSetOnEvent(-1, "On_Button") ; Call a common button function
+GUICtrlSetFont(-1, 10, 800, 0, "Times New Roman")
+GUISetState()
 EndFunc   ;==>gui3
 Func gui4() ;Power Tweaks
 	Opt("ExpandEnvStrings", 1)
@@ -582,10 +437,10 @@ Func gui4() ;Power Tweaks
 	$Pic1 = GUICtrlCreatePic("C:\Users\%username%\Desktop\C1SetupUtility\Files\Tools\BG.jpg", 0, 0, 257, 73)
 	GUICtrlSetState($Pic1, $GUI_DISABLE)
 	GUISetOnEvent($GUI_EVENT_CLOSE, "On_Close") ; Call a common GUI close function
-	$hButton24 = GUICtrlCreateButton("Laptop", 34, 20, 83, 33)
+	$hButton20 = GUICtrlCreateButton("Laptop", 34, 20, 83, 33)
 	GUICtrlSetOnEvent(-1, "On_Button") ; Call a common button function
 	GUICtrlSetFont(-1, 8, 800, 0, "Times New Roman")
-	$hButton25 = GUICtrlCreateButton("Desktop", 138, 20, 83, 33)
+	$hButton21 = GUICtrlCreateButton("Desktop", 138, 20, 83, 33)
 	GUICtrlSetOnEvent(-1, "On_Button") ; Call a common button function
 	GUICtrlSetFont(-1, 8, 800, 0, "Times New Roman")
 	GUISetState()
@@ -596,149 +451,14 @@ Func gui5() ;Favorites
 	$Pic1 = GUICtrlCreatePic("C:\Users\%username%\Desktop\C1SetupUtility\Files\Tools\BG.jpg", 0, 0, 257, 73)
 	GUICtrlSetState($Pic1, $GUI_DISABLE)
 	GUISetOnEvent($GUI_EVENT_CLOSE, "On_Close") ; Call a common GUI close function
-	$hButton26 = GUICtrlCreateButton("USA", 34, 20, 83, 33)
+	$hButton22 = GUICtrlCreateButton("USA", 34, 20, 83, 33)
 	GUICtrlSetOnEvent(-1, "On_Button") ; Call a common button function
 	GUICtrlSetFont(-1, 8, 800, 0, "Times New Roman")
-	$hButton27 = GUICtrlCreateButton("CANADA", 138, 20, 83, 33)
+	$hButton23 = GUICtrlCreateButton("CANADA", 138, 20, 83, 33)
 	GUICtrlSetOnEvent(-1, "On_Button") ; Call a common button function
 	GUICtrlSetFont(-1, 8, 800, 0, "Times New Roman")
 	GUISetState()
 EndFunc   ;==>gui5
-Func gui6() ; HP Printer Wizard
-	Opt("ExpandEnvStrings", 1)
-	$hGUI6 = GUICreate("HP Installer", 282, 198, 550, 300)
-	$Pic1 = GUICtrlCreatePic("C:\Users\%username%\Desktop\C1SetupUtility\Files\Tools\BG.jpg", 0, 0, 281, 177)
-	GUICtrlSetState($Pic1, $GUI_DISABLE)
-	GUISetOnEvent($GUI_EVENT_CLOSE, "On_Close") ; Call a common GUI close function
-	$hGui6FileMenu = GUICtrlCreateMenu("&File")
-	$hGui6FileExit = GUICtrlCreateMenuItem("Exit", $hGui6FileMenu)
-	GUISetOnEvent($GUI_EVENT_CLOSE, "On_Close") ; Call a common GUI close function
-	$hGui6MenuHelp = GUICtrlCreateMenu("&Help")
-	$hGui6MenuAbout = GUICtrlCreateMenuItem("About", $hGui6MenuHelp)
-	$hGui6MenuHost = GUICtrlCreateMenuItem("Host Table", $hGui6MenuHelp)
-	$PrinterName = GUICtrlCreateInput("", 109, 25, 165, 19)
-	$Label1 = GUICtrlCreateLabel("Printer Name:", 13, 25, 83, 19)
-	GUICtrlSetFont(-1, 10, 800, 0, "Times New Roman")
-	GUICtrlSetColor(-1, 0x0000FF)
-	GUICtrlSetBkColor(-1, 0xC0C0C0)
-	$PrinterIP = GUICtrlCreateInput("", 109, 65, 165, 19)
-	$Label2 = GUICtrlCreateLabel("Printer IP:", 13, 64, 64, 19)
-	GUICtrlSetFont(-1, 10, 800, 0, "Times New Roman")
-	GUICtrlSetColor(-1, 0x0000FF)
-	GUICtrlSetBkColor(-1, 0xC0C0C0)
-	$hButton28 = GUICtrlCreateButton("Install", 114, 103, 70, 20)
-	$hButton29 = GUICtrlCreateButton("Close", 196, 103, 70, 20)
-	GUISetOnEvent($GUI_EVENT_CLOSE, "On_Close") ; Call a common GUI close function
-	GUISetState()
-EndFunc   ;==>gui6
-Func gui7() ; Canon Printer Wizard
-	Opt("ExpandEnvStrings", 1)
-	$hGUI7 = GUICreate("Canon Installer", 282, 198, 550, 300)
-	$Pic1 = GUICtrlCreatePic("C:\Users\%username%\Desktop\C1SetupUtility\Files\Tools\BG.jpg", 0, 0, 281, 177)
-	GUICtrlSetState($Pic1, $GUI_DISABLE)
-	GUISetOnEvent($GUI_EVENT_CLOSE, "On_Close") ; Call a common GUI close function
-	$hGui6FileMenu = GUICtrlCreateMenu("&File")
-	$hGui6FileExit = GUICtrlCreateMenuItem("Exit", $hGui6FileMenu)
-	GUISetOnEvent($GUI_EVENT_CLOSE, "On_Close") ; Call a common GUI close function
-	$hGui6MenuHelp = GUICtrlCreateMenu("&Help")
-	$hGui6MenuAbout = GUICtrlCreateMenuItem("About", $hGui6MenuHelp)
-	$hGui6MenuHost = GUICtrlCreateMenuItem("Host Table", $hGui6MenuHelp)
-	$PrinterName = GUICtrlCreateInput("", 109, 25, 165, 19)
-	$Label1 = GUICtrlCreateLabel("Printer Name:", 13, 25, 83, 19)
-	GUICtrlSetFont(-1, 10, 800, 0, "Times New Roman")
-	GUICtrlSetColor(-1, 0x0000FF)
-	GUICtrlSetBkColor(-1, 0xC0C0C0)
-	$PrinterIP = GUICtrlCreateInput("", 109, 65, 165, 19)
-	$Label2 = GUICtrlCreateLabel("Printer IP:", 13, 64, 64, 19)
-	GUICtrlSetFont(-1, 10, 800, 0, "Times New Roman")
-	GUICtrlSetColor(-1, 0x0000FF)
-	GUICtrlSetBkColor(-1, 0xC0C0C0)
-	$hButton30 = GUICtrlCreateButton("Install", 114, 103, 70, 20)
-	$hButton31 = GUICtrlCreateButton("Close", 196, 103, 70, 20)
-	GUISetOnEvent($GUI_EVENT_CLOSE, "On_Close") ; Call a common GUI close function
-	GUISetState()
-EndFunc   ;==>gui7
-Func gui8() ; Ricoh Printer Wizard
-	Opt("ExpandEnvStrings", 1)
-	$hGUI8 = GUICreate("RicohInstaller", 282, 198, 550, 300)
-	$Pic1 = GUICtrlCreatePic("C:\Users\%username%\Desktop\C1SetupUtility\Files\Tools\BG.jpg", 0, 0, 281, 177)
-	GUICtrlSetState($Pic1, $GUI_DISABLE)
-	GUISetOnEvent($GUI_EVENT_CLOSE, "On_Close") ; Call a common GUI close function
-	$hGui6FileMenu = GUICtrlCreateMenu("&File")
-	$hGui6FileExit = GUICtrlCreateMenuItem("Exit", $hGui6FileMenu)
-	GUISetOnEvent($GUI_EVENT_CLOSE, "On_Close") ; Call a common GUI close function
-	$hGui6MenuHelp = GUICtrlCreateMenu("&Help")
-	$hGui6MenuAbout = GUICtrlCreateMenuItem("About", $hGui6MenuHelp)
-	$hGui6MenuHost = GUICtrlCreateMenuItem("Host Table", $hGui6MenuHelp)
-	$PrinterName = GUICtrlCreateInput("", 109, 25, 165, 19)
-	$Label1 = GUICtrlCreateLabel("Printer Name:", 13, 25, 83, 19)
-	GUICtrlSetFont(-1, 10, 800, 0, "Times New Roman")
-	GUICtrlSetColor(-1, 0x0000FF)
-	GUICtrlSetBkColor(-1, 0xC0C0C0)
-	$PrinterIP = GUICtrlCreateInput("", 109, 65, 165, 19)
-	$Label2 = GUICtrlCreateLabel("Printer IP:", 13, 64, 64, 19)
-	GUICtrlSetFont(-1, 10, 800, 0, "Times New Roman")
-	GUICtrlSetColor(-1, 0x0000FF)
-	GUICtrlSetBkColor(-1, 0xC0C0C0)
-	$hButton32 = GUICtrlCreateButton("Install", 114, 103, 70, 20)
-	$hButton33 = GUICtrlCreateButton("Close", 196, 103, 70, 20)
-	GUISetOnEvent($GUI_EVENT_CLOSE, "On_Close") ; Call a common GUI close function
-	GUISetState()
-EndFunc   ;==>gui8
-Func gui9() ; Sharp Printer Wizard
-	Opt("ExpandEnvStrings", 1)
-	$hGUI9 = GUICreate("Sharp Installer", 282, 198, 550, 300)
-	$Pic1 = GUICtrlCreatePic("C:\Users\%username%\Desktop\C1SetupUtility\Files\Tools\BG.jpg", 0, 0, 281, 177)
-	GUICtrlSetState($Pic1, $GUI_DISABLE)
-	GUISetOnEvent($GUI_EVENT_CLOSE, "On_Close") ; Call a common GUI close function
-	$hGui6FileMenu = GUICtrlCreateMenu("&File")
-	$hGui6FileExit = GUICtrlCreateMenuItem("Exit", $hGui6FileMenu)
-	GUISetOnEvent($GUI_EVENT_CLOSE, "On_Close") ; Call a common GUI close function
-	$hGui6MenuHelp = GUICtrlCreateMenu("&Help")
-	$hGui6MenuAbout = GUICtrlCreateMenuItem("About", $hGui6MenuHelp)
-	$hGui6MenuHost = GUICtrlCreateMenuItem("Host Table", $hGui6MenuHelp)
-	$PrinterName = GUICtrlCreateInput("", 109, 25, 165, 19)
-	$Label1 = GUICtrlCreateLabel("Printer Name:", 13, 25, 83, 19)
-	GUICtrlSetFont(-1, 10, 800, 0, "Times New Roman")
-	GUICtrlSetColor(-1, 0x0000FF)
-	GUICtrlSetBkColor(-1, 0xC0C0C0)
-	$PrinterIP = GUICtrlCreateInput("", 109, 65, 165, 19)
-	$Label2 = GUICtrlCreateLabel("Printer IP:", 13, 64, 64, 19)
-	GUICtrlSetFont(-1, 10, 800, 0, "Times New Roman")
-	GUICtrlSetColor(-1, 0x0000FF)
-	GUICtrlSetBkColor(-1, 0xC0C0C0)
-	$hButton34 = GUICtrlCreateButton("Install", 114, 103, 70, 20)
-	$hButton35 = GUICtrlCreateButton("Close", 196, 103, 70, 20)
-	GUISetOnEvent($GUI_EVENT_CLOSE, "On_Close") ; Call a common GUI close function
-	GUISetState()
-EndFunc   ;==>gui9
-Func gui10() ;Xerox Printer Wizard
-	Opt("ExpandEnvStrings", 1)
-	$hGUI10 = GUICreate("Xerox Installer", 282, 198, 550, 300)
-	$Pic1 = GUICtrlCreatePic("C:\Users\%username%\Desktop\C1SetupUtility\Files\Tools\BG.jpg", 0, 0, 281, 177)
-	GUICtrlSetState($Pic1, $GUI_DISABLE)
-	GUISetOnEvent($GUI_EVENT_CLOSE, "On_Close") ; Call a common GUI close function
-	$hGui6FileMenu = GUICtrlCreateMenu("&File")
-	$hGui6FileExit = GUICtrlCreateMenuItem("Exit", $hGui6FileMenu)
-	GUISetOnEvent($GUI_EVENT_CLOSE, "On_Close") ; Call a common GUI close function
-	$hGui6MenuHelp = GUICtrlCreateMenu("&Help")
-	$hGui6MenuAbout = GUICtrlCreateMenuItem("About", $hGui6MenuHelp)
-	$hGui6MenuHost = GUICtrlCreateMenuItem("Host Table", $hGui6MenuHelp)
-	$PrinterName = GUICtrlCreateInput("", 109, 25, 165, 19)
-	$Label1 = GUICtrlCreateLabel("Printer Name:", 13, 25, 83, 19)
-	GUICtrlSetFont(-1, 10, 800, 0, "Times New Roman")
-	GUICtrlSetColor(-1, 0x0000FF)
-	GUICtrlSetBkColor(-1, 0xC0C0C0)
-	$PrinterIP = GUICtrlCreateInput("", 109, 65, 165, 19)
-	$Label2 = GUICtrlCreateLabel("Printer IP:", 13, 64, 64, 19)
-	GUICtrlSetFont(-1, 10, 800, 0, "Times New Roman")
-	GUICtrlSetColor(-1, 0x0000FF)
-	GUICtrlSetBkColor(-1, 0xC0C0C0)
-	$hButton36 = GUICtrlCreateButton("Install", 114, 103, 70, 20)
-	$hButton37 = GUICtrlCreateButton("Close", 196, 103, 70, 20)
-	GUISetOnEvent($GUI_EVENT_CLOSE, "On_Close") ; Call a common GUI close function
-	GUISetState()
-EndFunc   ;==>gui10
 Func LogMeIn()
 	Opt("WinTitleMatchMode", -2)
 	Run(@DesktopDir & "\C1SetupUtility\Files\Scripts\Batch\LogMeIn.bat","","",@SW_HIDE)
@@ -832,92 +552,24 @@ Func WG()
 	Send("{TAB}")
 	Send("{ENTER}")
 EndFunc   ;==>WG
-Func HP()
+func Printers()
 	Opt("ExpandEnvStrings", 1)
 	$MyBox6 = MsgBox(35, "Data Check", "Did you enter the information correctly?")
 	If $MyBox6 == 6 Then
-		ShellExecute("C:\Users\%username%\Desktop\C1SetupUtility\Files\Scripts\Printers\HP.cmd",'"' & GUICtrlRead($PrinterName) & '" "' & GUICtrlRead($PrinterIP) & '"')
+		ShellExecute("C:\Users\mswatek\Desktop\AutoIT\Old\NewPrinters.cmd",'"' & GUICtrlRead($MFG) & '" "' & GUICtrlRead($PrinterName) & '" "' & GUICtrlRead($PrinterIP) & '"')
+		WinWaitActive("Printer Installer")
+		Send(GUICtrlRead($MFG))
+		Send("{ENTER 1}")
 		GUICtrlSetData($PrinterName, '')
 		GUICtrlSetData($PrinterIP, '')
 	ElseIf $MyBox6 == 2 Then
-		GUIDelete($hGUI6)
-		GUICtrlSetState($hGUI3, $GUI_ENABLE)
-	Else
-		GUIDelete($hGUI6)
-		GUICtrlSetState($hGUI3, $GUI_ENABLE)
-		gui6()
-	EndIf
-
-EndFunc   ;==>HP
-Func Canon()
-	Opt("ExpandEnvStrings", 1)
-	$MyBox6 = MsgBox(35, "Data Check", "Did you enter the information correctly?")
-	If $MyBox6 == 6 Then
-		ShellExecute("C:\Users\%username%\Desktop\C1SetupUtility\Files\Scripts\Printers\Canon.cmd",'"' & GUICtrlRead($PrinterName) & '" "' & GUICtrlRead($PrinterIP) & '"')
+		;GUICtrlSetState($GUI3, $GUI_ENABLE)
 		GUICtrlSetData($PrinterName, '')
 		GUICtrlSetData($PrinterIP, '')
-	ElseIf $MyBox6 == 2 Then
-		GUIDelete($hGUI6)
-		GUICtrlSetState($hGUI3, $GUI_ENABLE)
 	Else
-		GUIDelete($hGUI6)
-		GUICtrlSetState($hGUI3, $GUI_ENABLE)
-		gui6()
+		WinActivate("C1 Printer Installer","Welcome to the C1 Printer")
 	EndIf
-
-EndFunc   ;==>Canon
-Func Ricoh()
-	Opt("ExpandEnvStrings", 1)
-	$MyBox6 = MsgBox(35, "Data Check", "Did you enter the information correctly?")
-	If $MyBox6 == 6 Then
-		ShellExecute("C:\Users\%username%\Desktop\C1SetupUtility\Files\Scripts\Printers\Ricoh.cmd",'"' & GUICtrlRead($PrinterName) & '" "' & GUICtrlRead($PrinterIP) & '"')
-		GUICtrlSetData($PrinterName, '')
-		GUICtrlSetData($PrinterIP, '')
-	ElseIf $MyBox6 == 2 Then
-		GUIDelete($hGUI6)
-		GUICtrlSetState($hGUI3, $GUI_ENABLE)
-	Else
-		GUIDelete($hGUI6)
-		GUICtrlSetState($hGUI3, $GUI_ENABLE)
-		gui6()
-	EndIf
-
-EndFunc   ;==>Ricoh
-Func Sharp()
-	Opt("ExpandEnvStrings", 1)
-	$MyBox6 = MsgBox(35, "Data Check", "Did you enter the information correctly?")
-	If $MyBox6 == 6 Then
-		ShellExecute("C:\Users\%username%\Desktop\C1SetupUtility\Files\Scripts\Printers\Sharp.cmd",'"' & GUICtrlRead($PrinterName) & '" "' & GUICtrlRead($PrinterIP) & '"')
-		GUICtrlSetData($PrinterName, '')
-		GUICtrlSetData($PrinterIP, '')
-	ElseIf $MyBox6 == 2 Then
-		GUIDelete($hGUI6)
-		GUICtrlSetState($hGUI3, $GUI_ENABLE)
-	Else
-		GUIDelete($hGUI6)
-		GUICtrlSetState($hGUI3, $GUI_ENABLE)
-		gui6()
-	EndIf
-
-EndFunc   ;==>Sharp
-Func Xerox()
-	Opt("ExpandEnvStrings", 1)
-	$MyBox6 = MsgBox(35, "Data Check", "Did you enter the information correctly?")
-	If $MyBox6 == 6 Then
-		ShellExecute("C:\Users\%username%\Desktop\C1SetupUtility\Files\Scripts\Printers\Xerox.cmd",'"' & GUICtrlRead($PrinterName) & '" "' & GUICtrlRead($PrinterIP) & '"')
-		GUICtrlSetData($PrinterName, '')
-		GUICtrlSetData($PrinterIP, '')
-	ElseIf $MyBox6 == 2 Then
-		GUIDelete($hGUI6)
-		GUICtrlSetState($hGUI3, $GUI_ENABLE)
-	Else
-		GUIDelete($hGUI6)
-		GUICtrlSetState($hGUI3, $GUI_ENABLE)
-		gui6()
-	EndIf
-
-EndFunc   ;==>Xerox
-
+EndFunc
 
 
 
