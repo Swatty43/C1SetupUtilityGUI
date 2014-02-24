@@ -26,7 +26,7 @@ Global $Gui1MenuFile = 9999, $Gui1FileExit = 9999, $Gui1MenuHelp = 9999, $Gui1Me
 Global $Gui2MenuUni = 9999, $Gui2MenuExp = 9999, $Gui2MenuAuto = 9999, $Gui2MenuCC = 9999
 Global $Gui3MenuFile = 9999, $Gui3FileExit = 9999, $Gui3MenuHelp = 9999, $Gui3MenuAbout, $Gui3MenuInfo = 9999
 Global $hGui6FileMenu = 9999, $hGui6FileExit = 9999, $hGui6MenuHelp = 9999, $hGui6MenuAbout = 9999, $hGui6MenuHost = 9999
-Global $name, $IP, $PrinterName, $PrinterIP, $MyBox6 = 9999
+Global $name, $IP, $PrinterName, $PrinterIP, $MyBox6 = 9999, $MFG
 gui1()
 Func gui1() ;C1 Uninstaller
 Opt("ExpandEnvStrings", 1)
