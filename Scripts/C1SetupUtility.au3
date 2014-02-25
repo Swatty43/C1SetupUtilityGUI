@@ -1,6 +1,6 @@
 #cs ----------------------------------------------------------------------------
 
-	AutoIt Version: 3.3
+	AutoIt Version: 3.4
 	Author: Mike Swatek
 
 	Script Function:
@@ -122,7 +122,7 @@ SplashOff()
 						Exit
 					Case $Gui1MenuHelp
 					Case $Gui1MenuAbout
-						MsgBox(64, "About", "C1 Setup Utility®" & @CRLF & "Version 3.3" & @CRLF & @CRLF & @CRLF & "Created by Mike Swatek" & @CRLF & "©2014 Composites One. All rights reserved.")
+						MsgBox(64, "About", "C1 Setup Utility®" & @CRLF & "Version 3.4" & @CRLF & @CRLF & @CRLF & "Created by Mike Swatek" & @CRLF & "©2014 Composites One. All rights reserved.")
 					Case $Gui1MenuBug
 						gui6()
 						GUISetState(@SW_DISABLE,$hGUI1)
@@ -157,7 +157,7 @@ SplashOff()
 						WinActivate("C1 Setup Utility","Welcome to the C1 Setup Utility")
 					Case $Gui2MenuHelp
 					Case $Gui2MenuAbout
-						MsgBox(64, "About", "C1 Setup Utility®" & @CRLF & "Version 3.3" & @CRLF & @CRLF & @CRLF & "Created by Mike Swatek" & @CRLF & "©2014 Composites One. All rights reserved.")
+						MsgBox(64, "About", "C1 Setup Utility®" & @CRLF & "Version 3.4" & @CRLF & @CRLF & @CRLF & "Created by Mike Swatek" & @CRLF & "©2014 Composites One. All rights reserved.")
 					Case $Gui2MenuInfo
 						ShellExecute(@DesktopDir & "\C1SetupUtility\Files\Scripts\HostTable.txt")
 					Case $Gui2MenuAuto
@@ -215,7 +215,7 @@ SplashOff()
 						WinActivate("C1 Installer","Welcome to the C1 Installer")
 					Case $Gui3MenuHelp
 					Case $Gui3MenuAbout
-						MsgBox(64, "About", "C1 Setup Utility®" & @CRLF & "Version 3.3" & @CRLF & @CRLF & @CRLF & "Created by Mike Swatek" & @CRLF & "©2014 Composites One. All rights reserved.")
+						MsgBox(64, "About", "C1 Setup Utility®" & @CRLF & "Version 3.4" & @CRLF & @CRLF & @CRLF & "Created by Mike Swatek" & @CRLF & "©2014 Composites One. All rights reserved.")
 					Case $Gui3MenuInfo
 						ShellExecute(@DesktopDir & "\C1SetupUtility\Files\Scripts\HostTable.txt")
 					Case $hButton16
@@ -510,16 +510,17 @@ func mail()
 	If $CheckFile then
 	FileDelete("C:\Users\%username%\Desktop\C1SetupUtility\Files\Programs\Software\"& "*" & ".txt")
 	$Txt = GuiCtrlRead($Edit)
-	FileWrite("C:\Users\%username%\Desktop\C1SetupUtility\Files\Programs\Software\BugReport" & @MON & @MDAY & "-" & @ComputerName & ".txt", $Txt)
+	FileWrite("C:\Users\%username%\Desktop\C1SetupUtility\Files\Programs\Software\BugReport" &"-" & @MON & @MDAY & "-" & @ComputerName & ".txt", $Txt)
 	blat()
 	Else
 	$Txt = GuiCtrlRead($Edit)
-	FileWrite("C:\Users\%username%\Desktop\C1SetupUtility\Files\Programs\Software\BugReport" & @MON & @MDAY & "-" & @ComputerName & ".txt", $Txt)
+	FileWrite("C:\Users\%username%\Desktop\C1SetupUtility\Files\Programs\Software\BugReport" &"-" & @MON & @MDAY & "-" & @ComputerName & ".txt", $Txt)
 	blat()
 	EndIf
 EndFunc
 func blat()
-ShellExecute("C:\Users\%username%\Desktop\C1SetupUtility\Files\Scripts\Blat.cmd",'"' & GUICtrlRead($email) & '" "' & GUICtrlRead($pass) & '"')
+ShellExecute("C:\Users\%username%\Desktop\C1SetupUtility\Files\Scripts\Blat.cmd",'"' & GUICtrlRead($email) & '" "' & GUICtrlRead($pass) & '"',"","",@SW_HIDE)
+MsgBox(64, "Great Success!", "Message Sent!")
 EndFunc
 func Printers()
 	Opt("ExpandEnvStrings", 1)
