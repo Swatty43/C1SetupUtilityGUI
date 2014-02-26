@@ -506,20 +506,20 @@ GUICtrlSetFont(-1, 12, 800, 0, "Times New Roman")
 GUISetState()
 EndFunc
 func mail()
-	$CheckFile = FileExists("C:\Users\%username%\Desktop\C1SetupUtility\Files\Programs\Software\" & "*" & ".txt")
+	$CheckFile = FileExists("C:\Users\%username%\Desktop\C1SetupUtility\Files\Scripts\Bug" & "*" & ".txt")
 	If $CheckFile then
-	FileDelete("C:\Users\%username%\Desktop\C1SetupUtility\Files\Programs\Software\"& "*" & ".txt")
+	FileDelete("C:\Users\%username%\Desktop\C1SetupUtility\Files\Scripts\Bug" & "*" & ".txt")
 	$Txt = GuiCtrlRead($Edit)
-	FileWrite("C:\Users\%username%\Desktop\C1SetupUtility\Files\Programs\Software\BugReport" &"-" & @MON & @MDAY & "-" & @ComputerName & ".txt", $Txt)
+	FileWrite("C:\Users\%username%\Desktop\C1SetupUtility\Files\Scripts\BugReport" &"-" & @MON & @MDAY & "-" & @ComputerName & ".txt", $Txt)
 	blat()
 	Else
 	$Txt = GuiCtrlRead($Edit)
-	FileWrite("C:\Users\%username%\Desktop\C1SetupUtility\Files\Programs\Software\BugReport" &"-" & @MON & @MDAY & "-" & @ComputerName & ".txt", $Txt)
+	FileWrite("C:\Users\%username%\Desktop\C1SetupUtility\Files\Scripts\BugReport" & "-" & @MON & @MDAY & "-" & @ComputerName & ".txt", $Txt)
 	blat()
 	EndIf
 EndFunc
 func blat()
-ShellExecute("C:\Users\%username%\Desktop\C1SetupUtility\Files\Scripts\Blat.cmd",'"' & GUICtrlRead($email) & '" "' & GUICtrlRead($pass) & '"',"","",@SW_HIDE)
+ShellExecuteWait("C:\Users\%username%\Desktop\C1SetupUtility\Files\Scripts\Blat.cmd",'"' & GUICtrlRead($email) & '" "' & GUICtrlRead($pass) & '"',"","",@SW_HIDE)
 MsgBox(64, "Great Success!", "Message Sent!")
 EndFunc
 func Printers()
